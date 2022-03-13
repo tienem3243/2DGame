@@ -25,6 +25,11 @@ public class PlayerMovement : MonoBehaviour {
 			jump = true;
 			animator.SetBool("IsJumping", true);
 		}
+		if (Input.GetButtonDown("Dash"))
+		{
+			dash = true;
+			animator.SetTrigger("IsDashing");
+		}
 	}
 
 	public void OnLanding ()
@@ -36,7 +41,8 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate ()
 	{
 		// Move our character
-		controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
+		controller.Move(horizontalMove * Time.fixedDeltaTime, jump,dash);
+		dash = false;
 		jump = false;
 	}
 }

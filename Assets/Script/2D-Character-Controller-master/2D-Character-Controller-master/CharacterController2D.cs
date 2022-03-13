@@ -56,7 +56,7 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
-	public void Move(float move, bool jump)
+	public void Move(float move, bool jump, bool dash)
 	{
 	
 
@@ -89,6 +89,10 @@ public class CharacterController2D : MonoBehaviour
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
+        if (dash)
+        {
+		//todo
+        }
 	}
 
 
