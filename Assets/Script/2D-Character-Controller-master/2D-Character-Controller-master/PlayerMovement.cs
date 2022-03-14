@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour {
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool dash = false;
+	bool crouch = false;
 
 	// Update is called once per frame
 	void Update () {
@@ -30,6 +31,11 @@ public class PlayerMovement : MonoBehaviour {
 			dash = true;
 			animator.SetTrigger("IsDashing");
 		}
+		if (Input.GetButtonDown("Crounch"))
+		{
+			crouch = true;
+			animator.SetTrigger("IsCrouching");
+		}
 	}
 
 	public void OnLanding ()
@@ -41,8 +47,9 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate ()
 	{
 		// Move our character
-		controller.Move(horizontalMove * Time.fixedDeltaTime, jump,dash);
+		controller.Move(horizontalMove * Time.fixedDeltaTime, jump,dash,crouch);
 		dash = false;
 		jump = false;
+		crouch = false;
 	}
 }

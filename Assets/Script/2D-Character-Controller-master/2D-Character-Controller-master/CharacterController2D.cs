@@ -56,7 +56,7 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
-	public void Move(float move, bool jump, bool dash)
+	public void Move(float move, bool jump, bool dash,bool crouch)
 	{
 	
 
@@ -91,7 +91,11 @@ public class CharacterController2D : MonoBehaviour
 		}
         if (dash)
         {
-		//todo
+            // TODO:dsd
+        }
+        if (crouch)
+        {
+			//todo
         }
 	}
 
