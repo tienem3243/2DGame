@@ -397,7 +397,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22656683}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.6, y: 0.89999986, z: -10.57}
+  m_LocalPosition: {x: 36.6, y: 0.89999986, z: -10.651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 484081633}
@@ -2798,6 +2798,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c64259e889504da58fdd882799872ef, type: 3}
+--- !u!114 &323027744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1871907800393121223, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
+  m_PrefabInstance: {fileID: 906644420}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &334412370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8590968705917057399, guid: 0adcd81b299c34866b47483cb008bbc9, type: 3}
@@ -3145,7 +3156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384926927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.6, y: 0.89999986, z: -10.57}
+  m_LocalPosition: {x: 36.6, y: 0.89999986, z: -10.651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6712,7 +6723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8798179665164624786, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.57
+      value: -0.651
       objectReference: {fileID: 0}
     - target: {fileID: 8798179665164624786, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7209,6 +7220,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 70
       objectReference: {fileID: 0}
+    - target: {fileID: 1871907800393121223, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871907800393121223, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1871907800929145000, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -7242,12 +7261,32 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1871907800992873672, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 848.1882
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871907800992873672, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 162.8549
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871907800992873672, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -117
+      value: 19.0265
       objectReference: {fileID: 0}
     - target: {fileID: 1871907800992873672, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 9
+      value: -39.8108
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871907800992873673, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871907800992873673, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1871907800992873673, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1871907801121230930, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -7367,6 +7406,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1871907802001593384, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
+      propertyPath: charName
+      value: 
+      objectReference: {fileID: 323027744}
     - target: {fileID: 1871907802001593384, guid: 14feddb7fefd1d148b3cbe8f9f643315, type: 3}
       propertyPath: animDialog
       value: 
@@ -11307,7 +11350,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 5.482382, y: -0.17259085, z: 0}
+    - position: {x: 6.009569, y: -0.114014655, z: 0}
       leftTangent: {x: -2.289484, y: -0.010301352, z: 0}
       rightTangent: {x: 2.4832306, y: 0.01117301, z: 0}
       mode: 1
@@ -11390,8 +11433,8 @@ SpriteShapeRenderer:
   m_Sprites:
   - {fileID: 21300000, guid: 9ea8801975e4840759a061a599292303, type: 3}
   m_LocalAABB:
-    m_Center: {x: 8.229546, y: -0.092029095, z: 0}
-    m_Extent: {x: 6.611517, y: 1.4554114, z: 0}
+    m_Center: {x: 8.237974, y: -0.11257541, z: 0}
+    m_Extent: {x: 6.631578, y: 1.4471066, z: 0}
 --- !u!4 &1370675241
 Transform:
   m_ObjectHideFlags: 0
@@ -11431,24 +11474,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.7669069, y: 0.8085811}
-      - {x: 2.447266, y: 0.63344824}
-      - {x: 3.1189904, y: 0.5258142}
-      - {x: 3.6376781, y: 0.47050717}
-      - {x: 4.280268, y: 0.42613646}
-      - {x: 5.12859, y: 0.4013218}
-      - {x: 5.4912753, y: 0.39963067}
-      - {x: 6.053651, y: 0.38460684}
-      - {x: 6.6999145, y: 0.33854163}
-      - {x: 7.4034925, y: 0.26686764}
-      - {x: 8.242657, y: 0.16127305}
-      - {x: 8.921299, y: 0.06574038}
-      - {x: 9.702466, y: -0.054454245}
-      - {x: 10.475724, y: -0.18159845}
-      - {x: 11.929176, y: -0.43832433}
-      - {x: 13.142127, y: -0.66758305}
-      - {x: 14.284023, y: -0.8958756}
-      - {x: 14.724699, y: -0.9870085}
+    - - {x: 1.6911193, y: 0.7662782}
+      - {x: 2.6674516, y: 0.63070035}
+      - {x: 3.38487, y: 0.56054527}
+      - {x: 4.366716, y: 0.49537402}
+      - {x: 5.147864, y: 0.46668574}
+      - {x: 6.01846, y: 0.45820692}
+      - {x: 6.5762315, y: 0.44232965}
+      - {x: 7.205757, y: 0.39388525}
+      - {x: 7.882049, y: 0.31861764}
+      - {x: 8.591912, y: 0.22159432}
+      - {x: 9.321008, y: 0.10769869}
+      - {x: 10.054437, y: -0.018242138}
+      - {x: 11.473218, y: -0.28701493}
+      - {x: 12.724692, y: -0.54623723}
+      - {x: 14.299592, y: -0.899322}
+      - {x: 14.737558, y: -1.0026965}
 --- !u!66 &1370675243
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -15985,7 +16026,7 @@ GameObject:
   - component: {fileID: 1963356339}
   - component: {fileID: 1963356338}
   - component: {fileID: 1963356340}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Skull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16070,7 +16111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963356334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.805763, y: 0.52, z: -0.58}
+  m_LocalPosition: {x: 38.77, y: 0.28, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16091,9 +16132,15 @@ MonoBehaviour:
   dialog:
     name: Skull
     sentenses:
-    - Hello Stranger
-    - Wanna trade something?
-    - I sell a lot of material maybe you need.
+    - Hey!
+    - Can you carry me to inside central?Pls
+    - Oh. I isn't a ghost. I am the spirit of this forest. I dont know but when i
+      wake up i stuck in this skul. May be some mage in contry can help me out. So...
+      can you help me pls
+    - 'Dont move fast human. Do you know the ghost can''t generate a gold from dirt. '
+    - 'So let''s go. I will lead
+
+'
   dialogManager: {fileID: 701056399}
 --- !u!114 &1963356339
 MonoBehaviour:

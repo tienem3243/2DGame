@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DialogManager : MonoBehaviour
 {
    private Queue<string> sentenses;
-    public Text name;
+    public Text charName;
     public Text dialogText;
     public Animator animDialog;
     private void Start()
@@ -17,7 +17,7 @@ public class DialogManager : MonoBehaviour
     {
         animDialog.SetTrigger("IsOpening");
         Debug.Log("Start conservation with" + dialog.name);
-        name.text = dialog.name;
+        charName.text = dialog.name;
         sentenses.Clear();
         foreach(string sentence in dialog.sentenses)
         {

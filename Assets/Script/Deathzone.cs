@@ -9,6 +9,7 @@ public class Deathzone : MonoBehaviour
         if (collision.tag=="Player")
         {
             Debug.Log("You die");
+           
           
         }
     }

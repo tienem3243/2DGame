@@ -10,7 +10,7 @@ public class WaittingScene : MonoBehaviour
     public float waitTime = 9f;
 
     [Tooltip("Scene name")]
-    public string name = "Home";
+    public string sceneName = "Home";
 
     void Start()
     {
@@ -22,6 +22,6 @@ public class WaittingScene : MonoBehaviour
         // Do intro stuff. Play animations, move gameobjects, load preloaders ect
         yield return new WaitForSeconds(waitTime);
 
-        SceneManager.LoadScene(name);
+        SceneManager.LoadScene(sceneName);
     }
 }

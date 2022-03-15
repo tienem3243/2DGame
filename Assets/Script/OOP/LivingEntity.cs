@@ -6,7 +6,7 @@ public abstract class LivingEntity : MonoBehaviour
 {
     [Header("Entity name")]
     [Tooltip("Entity name")]
-    public string name;
+    public string characterName;
 
     [Header("Entity Health Point")]
     protected float maxHitPoint;
