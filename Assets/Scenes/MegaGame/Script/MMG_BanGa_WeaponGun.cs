@@ -25,7 +25,7 @@ public class MMG_BanGa_WeaponGun : MonoBehaviour
         if ((Input.GetKeyDown(_fireButton[0]) || (Input.GetKeyDown(_fireButton[1])))
             && Time.time > _fireDelay)
         {
-            _fireDelay = Time.time * _timeDelay;
+            _fireDelay = Time.time + _timeDelay;
             shoot();
         }
     }
