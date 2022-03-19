@@ -9,8 +9,6 @@ public class MMG_BanGa_Controller : MonoBehaviour
     private KeyCode[] _moveLeft = { KeyCode.A, KeyCode.LeftArrow };
     [SerializeField]
     private KeyCode[] _moveRight = { KeyCode.D, KeyCode.RightArrow };
-    [SerializeField]
-    private KeyCode[] _fire = { KeyCode.Mouse0, KeyCode.Space, KeyCode.KeypadEnter };
 
     [Header("Player Infor")]
     [SerializeField]
@@ -33,11 +31,8 @@ public class MMG_BanGa_Controller : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // _rigidbody2D.MovePosition(_rigidbody2D.position +
-        // (movement * _movementSpeed * Time.fixedDeltaTime));
-
-        transform.position += new Vector3(movement.x, 0, 0) * _movementSpeed * Time.fixedDeltaTime;
-
+        _rigidbody2D.MovePosition(_rigidbody2D.position +
+        (movement * _movementSpeed * Time.fixedDeltaTime));
     }
 
 }
