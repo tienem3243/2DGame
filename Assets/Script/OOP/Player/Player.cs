@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class Player : LivingEntity
 {
-    private void Start()
-    {
-        base.heathBar.SetHealthBar(base.hitPoint, base.maxHitPoint);
-    }
-
     public override void takeDamage(float damage)
     {
-        base.hitPoint -= damage;
-        base.heathBar.SetHealthBar(base.hitPoint, base.maxHitPoint);
+        base._hitPoint -= damage;
+        base._heathBar.SetHealthBar(base._hitPoint, base._maxHitPoint);
 
-        if (base.hitPoint <= 0)
+        if (base._hitPoint <= 0)
         {
             // Do something for player die
             EntityDestroy();

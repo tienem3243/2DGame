@@ -6,26 +6,26 @@ using UnityEngine.UI;
 public class HeathBarController : MonoBehaviour
 {
     [Header("Make health bar for entity")]
-    public Slider slider;
-    public Color low;
-    public Color high;
-    public Vector3 offset;
+    public Slider _slider;
+    public Color _low;
+    public Color _high;
+    public Vector3 _offset;
 
     /// <summary>Set heal bar for display entity's Heath.</summary>
     /// <param name="health"> description </param>
     public void SetHealthBar(float hitPoint, float maxHitPoint)
     {
         // only true or false
-        slider.gameObject.SetActive(hitPoint < maxHitPoint);
-        slider.value = hitPoint;
-        slider.maxValue = maxHitPoint;
+        _slider.gameObject.SetActive(hitPoint < maxHitPoint);
+        _slider.value = hitPoint;
+        _slider.maxValue = maxHitPoint;
 
-        slider.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(low, high, slider.normalizedValue);
+        _slider.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(_low, _high, _slider.normalizedValue);
     }
 
     private void Update()
     {
         // make HeathBar/Slider move with parant position
-        slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + offset);
+        _slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + _offset);
     }
 }
