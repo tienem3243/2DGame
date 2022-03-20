@@ -9,12 +9,21 @@ public class MMG_BanGa_Controller : MonoBehaviour
     private KeyCode[] _moveLeft = { KeyCode.A, KeyCode.LeftArrow };
     [SerializeField]
     private KeyCode[] _moveRight = { KeyCode.D, KeyCode.RightArrow };
+    [SerializeField]
+    private KeyCode[] _fire = { KeyCode.J, KeyCode.Mouse0 };
 
     [Header("Player Infor")]
     [SerializeField]
     private float _movementSpeed = 10;
     private Rigidbody2D _rigidbody2D;
 
+    [SerializeField]
+    [Header("Bullet")]
+    private GameObject bullet;
+    [SerializeField]
+    [Header("Firepoint")]
+    private GameObject firepoint;
+    //movement vector
     Vector2 movement;
 
     private void Awake()
@@ -23,9 +32,9 @@ public class MMG_BanGa_Controller : MonoBehaviour
     }
     private void Update()
     {
-        //pause and resume
+        //pause and resume TODO
+        //movement
         movement.x = Input.GetAxis("Horizontal");
-
         // transform.position += new Vector3(movement, 0, 0) * _movementSpeed * Time.deltaTime;
     }
 

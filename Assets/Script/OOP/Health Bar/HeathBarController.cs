@@ -10,6 +10,7 @@ public class HeathBarController : MonoBehaviour
     public Color _low;
     public Color _high;
     public Vector3 _offset;
+    public Camera cam;
 
     /// <summary>Set heal bar for display entity's Heath.</summary>
     /// <param name="health"> description </param>
@@ -26,6 +27,6 @@ public class HeathBarController : MonoBehaviour
     private void Update()
     {
         // make HeathBar/Slider move with parant position
-        _slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + _offset);
+        _slider.transform.position = cam.WorldToScreenPoint(transform.parent.position + _offset);
     }
 }

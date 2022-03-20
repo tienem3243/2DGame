@@ -31,6 +31,7 @@ public class MMG_BanGa_Bullet : MonoBehaviour
                 enemy.takeDamage(_damage);
             }
         }
+        if(!other.CompareTag("Player")&&!other.CompareTag("Bullet"))// TODO need better logic
         Destroy(gameObject);
     }
 }
