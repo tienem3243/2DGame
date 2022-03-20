@@ -19,9 +19,18 @@ public class MMG_BanGa_Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Zone")
+        // if (other.tag == "Zone")
+        // {
+        //     Destroy(gameObject);
+        // }
+        if (other.tag == "Enemy")
         {
-            Destroy(gameObject);
+            Enemy enemy = other.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.takeDamage(_damage);
+            }
         }
+        Destroy(gameObject);
     }
 }

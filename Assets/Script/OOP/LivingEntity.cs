@@ -6,19 +6,27 @@ public abstract class LivingEntity : MonoBehaviour
 {
     [Header("Entity name")]
     [Tooltip("Entity name")]
-    public string characterName;
+    [SerializeField]
+    private string _characterName;
 
     [Header("Entity Health Point")]
-    protected float maxHitPoint;
-    protected float hitPoint;
-    public HeathBarController heathBar;
+    [SerializeField]
+    protected float _maxHitPoint;
+    [SerializeField]
+    protected float _hitPoint;
+    [SerializeField]
+    protected HeathBarController _heathBar;
 
-
+    /// <summary> make healbar display </summary> 
+    private void Start()
+    {
+        _heathBar.SetHealthBar(_hitPoint, _maxHitPoint);
+    }
     public abstract void takeDamage(float damage);
 
     public virtual void ProtectStats()
     {
-        hitPoint = Mathf.Clamp(hitPoint, 0, maxHitPoint);
+        _hitPoint = Mathf.Clamp(_hitPoint, 0, _maxHitPoint);
     }
     public void EntityDestroy()
     {
