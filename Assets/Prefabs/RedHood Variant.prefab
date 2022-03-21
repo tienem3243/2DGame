@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5594225532862850757, guid: a169c44652197684ab576d8d4da5b971, type: 3}
       propertyPath: m_Name
-      value: RedHood
+      value: RedHood Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5594225532862850777, guid: a169c44652197684ab576d8d4da5b971, type: 3}
       propertyPath: m_RootOrder

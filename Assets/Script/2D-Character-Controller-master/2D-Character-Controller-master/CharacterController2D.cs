@@ -18,6 +18,9 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
+	[SerializeField]
+	AtackSystem atkSys;
+
 	[Header("Events")]
 	[Space]
 
@@ -56,7 +59,7 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
-	public void Move(float move, bool jump, bool dash,bool crouch)
+	public void Move(float move, bool jump, bool dash,bool crouch,int atk)
 	{
 	
 
@@ -96,6 +99,10 @@ public class CharacterController2D : MonoBehaviour
         if (crouch)
         {
 			//todo
+        }
+        if (atk > 0)
+        {
+			atkSys.Melee(3);
         }
 	}
 
