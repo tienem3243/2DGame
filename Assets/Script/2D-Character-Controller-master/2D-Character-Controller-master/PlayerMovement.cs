@@ -48,6 +48,11 @@ public class PlayerMovement : MonoBehaviour {
 		animator.SetBool("IsJumping", false);
 		Debug.Log("active funtion onlanding");
 	}
+	public void OnAir()
+	{
+		animator.SetBool("IsJumping", true);
+		Debug.Log("Fall");
+	}
 
 
 	void FixedUpdate ()

@@ -25,6 +25,7 @@ public class CharacterController2D : MonoBehaviour
 	[Space]
 
 	public UnityEvent OnLandEvent;
+	public UnityEvent OnAirEvent;
 
 	[System.Serializable]
 	public class BoolEvent : UnityEvent<bool> { }
@@ -35,7 +36,8 @@ public class CharacterController2D : MonoBehaviour
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
-
+		if (OnAirEvent == null)
+			OnAirEvent = new UnityEvent();
 	}
 
 	private void FixedUpdate()
@@ -47,6 +49,11 @@ public class CharacterController2D : MonoBehaviour
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
 		// Creat a array that hold many object was scaned by cursor, Physic2D.OverlapCircleAll(cursor position,radius,layer need)
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
+        if (colliders.Length == 0)
+        {
+			OnAirEvent.Invoke();
+			Debug.Log(colliders.Length);
+		}
 		for (int i = 0; i < colliders.Length; i++)
 		{
 			if (colliders[i].gameObject != gameObject)
