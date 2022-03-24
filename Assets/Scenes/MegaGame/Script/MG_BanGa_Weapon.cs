@@ -22,7 +22,7 @@ public class MG_BanGa_Weapon : MonoBehaviour
 
     private void Update()
     {
-        if ((Input.GetKeyDown(_fireButton[0]) || (Input.GetKeyDown(_fireButton[1])))
+        if ((Input.GetKey(_fireButton[0]) || (Input.GetKey(_fireButton[1])))
             && Time.time > _fireDelay)
         {
             _fireDelay = Time.time + _timeDelay;
