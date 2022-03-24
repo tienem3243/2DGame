@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MMG_BanGa_WeaponGun : MonoBehaviour
+public class MG_BanGa_Weapon : MonoBehaviour
 {
     [Header("Asset")]
     [SerializeField]
@@ -34,5 +34,4 @@ public class MMG_BanGa_WeaponGun : MonoBehaviour
     {
         Instantiate(_bulletPrefab, _firePoint.position, _firePoint.rotation);
     }
-
 }

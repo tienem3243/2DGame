@@ -27,6 +27,8 @@ public class HeathBarController : MonoBehaviour
     private void Update()
     {
         // make HeathBar/Slider move with parant position
+        // _slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + _offset);
         _slider.transform.position = cam.WorldToScreenPoint(transform.parent.position + _offset);
+
     }
 }

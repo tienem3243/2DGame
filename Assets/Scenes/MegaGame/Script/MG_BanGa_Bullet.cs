@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MMG_BanGa_Bullet : MonoBehaviour
+public class MG_BanGa_Bullet : MonoBehaviour
 {
     [Header("Bullet infor")]
     [SerializeField]
@@ -15,6 +15,8 @@ public class MMG_BanGa_Bullet : MonoBehaviour
     private void Start()
     {
         _rb2D.velocity = transform.up * _speedBullet;
+        // _rb2D.velocity = transform.right * _speedBullet;
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,7 +33,7 @@ public class MMG_BanGa_Bullet : MonoBehaviour
                 enemy.takeDamage(_damage);
             }
         }
-        if(!other.CompareTag("Player")&&!other.CompareTag("Bullet"))// TODO need better logic
-        Destroy(gameObject);
+        if (!other.CompareTag("Player") && !other.CompareTag("Bullet"))// TODO need better logic
+            Destroy(gameObject);
     }
 }
