@@ -12,7 +12,6 @@ public class Enemy : LivingEntity
         if (base._hitPoint <= 0)
         {
             // Do something for player die
-            _deadEffect.Play();
             EntityDestroy();
         }
     }

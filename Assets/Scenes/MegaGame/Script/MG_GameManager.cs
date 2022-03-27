@@ -3,12 +3,23 @@ using UnityEngine.UI;
 
 public class MG_GameManager : MonoBehaviour
 {
+
+    public AudioSource theMusic;
+
     [SerializeField]
     private bool _startPlaying;
     [SerializeField]
     private MG_Scoller _scoller;
-    // [SerializeField]
-    // private int _score;
+
+
+
+    [SerializeField]
+    private int score;
+    public Text txtScore;
+    public static MG_GameManager instance;
+    public MG_ScoreController scoreController;
+
+
 
     [Header("Display at start")]
     public Text _txtKeyToStart;
@@ -18,6 +29,8 @@ public class MG_GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         _startPlaying = false;
+
+        instance = this;
         // _score = 0;
     }
 
@@ -33,6 +46,7 @@ public class MG_GameManager : MonoBehaviour
 
                 // start game
                 Time.timeScale = 1;
+                theMusic.Play();
 
                 // Destroy Obj dont need
                 Destroy(_txtKeyToStart);
@@ -41,4 +55,27 @@ public class MG_GameManager : MonoBehaviour
         }
     }
 
+    public void NoteHit(int scorePoint)
+    {
+        Debug.Log("Note hit one time");
+        if (score == 0)
+        {
+            scoreController.SetHealthBar(score, 200);
+        }
+
+        score += scorePoint;
+        txtScore.text = "Score: " + score;
+
+
+        scoreController.SetHealthBar(score, 200);
+        if (score == 50)
+        {
+            scoreController.turnOff_On();
+        }
+    }
+
+    public void NoteMiss()
+    {
+        Debug.Log("Missed note");
+    }
 }

@@ -17,13 +17,14 @@ public abstract class LivingEntity : MonoBehaviour
     [SerializeField]
     protected HeathBarController _heathBar;
 
-    protected Animation _deadEffect;
-    public AnimationClip deadEffect;
+    private Animator _animDead;
+    // public AnimationClip deadEffect;
 
     /// <summary> make healbar display </summary> 
     private void Start()
     {
-        _deadEffect.clip = deadEffect;
+        // _deadEffect.clip = deadEffect;
+        _animDead = gameObject.GetComponent<Animator>();
         _heathBar.SetHealthBar(_hitPoint, _maxHitPoint);
     }
     public abstract void takeDamage(float damage);
@@ -34,6 +35,7 @@ public abstract class LivingEntity : MonoBehaviour
     }
     public void EntityDestroy()
     {
+        _animDead.SetBool("IsDead", true);
         Destroy(gameObject);
     }
 

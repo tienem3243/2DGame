@@ -290,7 +290,6 @@ MonoBehaviour:
   _maxHitPoint: 10
   _hitPoint: 10
   _heathBar: {fileID: 8295733770505656163}
-  deadEffect: {fileID: 7400000, guid: 31dad590988255d43a3c888e0969c2cb, type: 2}
 --- !u!50 &8295733770441011733
 Rigidbody2D:
   serializedVersion: 4
