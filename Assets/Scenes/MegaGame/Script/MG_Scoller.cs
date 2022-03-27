@@ -13,6 +13,7 @@ public class MG_Scoller : MonoBehaviour
 
     public GameObject _prefab;
 
+    [SerializeField]
     float timeWait = 0.0f;
 
     public void setIsStart(bool flag)
@@ -35,7 +36,8 @@ public class MG_Scoller : MonoBehaviour
             if (Time.time > timeWait)
             {
                 //spawn obj prefab
-                Instantiate(_prefab, gameObject.transform.position, Quaternion.identity);
+                // Instantiate(_prefab, gameObject.transform.position, Quaternion.identity);
+                Instantiate(_prefab, new Vector3(-9, 0, 2), Quaternion.identity);
                 timeWait = Time.time + 5.0f;
             }
 

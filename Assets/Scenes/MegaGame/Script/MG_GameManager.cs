@@ -7,8 +7,8 @@ public class MG_GameManager : MonoBehaviour
     private bool _startPlaying;
     [SerializeField]
     private MG_Scoller _scoller;
-    [SerializeField]
-    private int _score;
+    // [SerializeField]
+    // private int _score;
 
     [Header("Display at start")]
     public Text _txtKeyToStart;
@@ -18,7 +18,7 @@ public class MG_GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         _startPlaying = false;
-        _score = 0;
+        // _score = 0;
     }
 
     private void Update()
