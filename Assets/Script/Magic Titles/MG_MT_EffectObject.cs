@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MG_EffectObject : MonoBehaviour
+public class MG_MT_EffectObject : MonoBehaviour
 {
-    [SerializeField]
-    private float lifeTime = 1f;
+    public float lifeTime = 1f;
 
     private void Update()
     {

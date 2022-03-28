@@ -16,8 +16,7 @@ public class MG_GameManager : MonoBehaviour
     [SerializeField]
     private int score;
     public Text txtScore;
-    public static MG_GameManager instance;
-    public MG_ScoreController scoreController;
+    // public static MG_GameManager instance;
 
 
 
@@ -30,7 +29,7 @@ public class MG_GameManager : MonoBehaviour
         Time.timeScale = 0;
         _startPlaying = false;
 
-        instance = this;
+        // instance = this;
         // _score = 0;
     }
 
@@ -55,26 +54,26 @@ public class MG_GameManager : MonoBehaviour
         }
     }
 
-    public void NoteHit(int scorePoint)
+    public void Hit(int scorePoint)
     {
         Debug.Log("Note hit one time");
-        if (score == 0)
-        {
-            scoreController.SetHealthBar(score, 200);
-        }
+        // if (score == 0)
+        // {
+        // scoreController.SetHealthBar(score, 200);
+        // }
 
-        score += scorePoint;
-        txtScore.text = "Score: " + score;
+        // score += scorePoint;
+        // txtScore.text = "Score: " + score;
 
 
-        scoreController.SetHealthBar(score, 200);
-        if (score == 50)
-        {
-            scoreController.turnOff_On();
-        }
+        // scoreController.SetHealthBar(score, 200);
+        // if (score == 50)
+        // {
+        // scoreController.turnOff_On();
+        // }
     }
 
-    public void NoteMiss()
+    public void Missed()
     {
         Debug.Log("Missed note");
     }

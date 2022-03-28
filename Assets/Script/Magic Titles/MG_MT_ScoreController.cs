@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MG_ScoreController : MonoBehaviour
+public class MG_MT_ScoreController : MonoBehaviour
 {
 
     public Slider slider;
@@ -12,6 +12,7 @@ public class MG_ScoreController : MonoBehaviour
     public Vector3 offset;
 
     public Image star, starNull;
+    public Camera cam;
 
     /// <summary>Set heal bar for display entity's Heath.</summary>
     /// <param name="health"> description </param>
@@ -27,7 +28,7 @@ public class MG_ScoreController : MonoBehaviour
     void Update()
     {
         // make HeathBar/Slider move with parant position
-        slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + offset);
+        slider.transform.position = cam.WorldToScreenPoint(transform.parent.position + offset);
     }
 
     public void turnOff_On()
@@ -35,4 +36,5 @@ public class MG_ScoreController : MonoBehaviour
         star.gameObject.SetActive(true);
         starNull.gameObject.SetActive(false);
     }
+
 }

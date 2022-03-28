@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MG_NoteObject : MonoBehaviour
+public class MG_MT_NoteObject : MonoBehaviour
 {
     public bool canBePressed;
     public AudioClip noteSong;
@@ -22,7 +22,7 @@ public class MG_NoteObject : MonoBehaviour
                 AudioSource.PlayClipAtPoint(noteSong, transform.position, 100);
 
                 Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
-                MG_GameManager.instance.NoteHit(scorePoint);
+                MG_MT_GameManager.instance.NoteHit(scorePoint);
             }
         }
     }
@@ -41,7 +41,7 @@ public class MG_NoteObject : MonoBehaviour
         {
             canBePressed = false;
 
-            MG_GameManager.instance.NoteMiss();
+            MG_MT_GameManager.instance.NoteMiss();
         }
     }
 }

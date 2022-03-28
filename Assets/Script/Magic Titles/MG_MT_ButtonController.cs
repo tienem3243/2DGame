@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MG_ButtonController : MonoBehaviour
+public class MG_MT_ButtonController : MonoBehaviour
 {
     private SpriteRenderer theSR;
     public Sprite defaultImage;
