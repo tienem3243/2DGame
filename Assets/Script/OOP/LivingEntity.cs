@@ -29,14 +29,15 @@ public abstract class LivingEntity : MonoBehaviour
     }
     public abstract void takeDamage(float damage);
 
-    public virtual void ProtectStats()
-    {
-        _hitPoint = Mathf.Clamp(_hitPoint, 0, _maxHitPoint);
-    }
+    // public virtual void ProtectStats()
+    // {
+    //     _hitPoint = Mathf.Clamp(_hitPoint, 0, _maxHitPoint);
+    // }
+
     public void EntityDestroy()
     {
         _animDead.SetBool("IsDead", true);
-        Destroy(gameObject);
+        Destroy(gameObject, 3);
     }
 
 }

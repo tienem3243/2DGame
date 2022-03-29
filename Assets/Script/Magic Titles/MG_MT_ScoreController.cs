@@ -11,7 +11,7 @@ public class MG_MT_ScoreController : MonoBehaviour
     public Color high;
     public Vector3 offset;
 
-    public Image star, starNull;
+    public Image[] star, starNull;
     public Camera cam;
 
     /// <summary>Set heal bar for display entity's Heath.</summary>
@@ -28,13 +28,13 @@ public class MG_MT_ScoreController : MonoBehaviour
     void Update()
     {
         // make HeathBar/Slider move with parant position
-        slider.transform.position = cam.WorldToScreenPoint(transform.parent.position + offset);
+        // slider.transform.position = cam.WorldToScreenPoint(transform.parent.position + offset);
     }
 
-    public void turnOff_On()
+    public void turnOff_On(int pos)
     {
-        star.gameObject.SetActive(true);
-        starNull.gameObject.SetActive(false);
+        star[pos].gameObject.SetActive(true);
+        starNull[pos].gameObject.SetActive(false);
     }
 
 }

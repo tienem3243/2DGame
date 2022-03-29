@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Player : LivingEntity
 {
+    private float _atk;
+    private float _def;
+
+
     public override void takeDamage(float damage)
     {
         base._hitPoint -= damage;
@@ -15,4 +19,5 @@ public class Player : LivingEntity
             EntityDestroy();
         }
     }
+
 }

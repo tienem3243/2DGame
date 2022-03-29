@@ -18,7 +18,7 @@ public class MG_MT_GameManager : MonoBehaviour
     void Start()
     {
         instance = this;
-        scoreController.SetHealthBar(score, 200);
+        // scoreController.SetHealthBar(score, 200);
     }
 
     // Update is called once per frame
@@ -42,17 +42,25 @@ public class MG_MT_GameManager : MonoBehaviour
         Debug.Log("Note hit one time");
         if (score == 0)
         {
-            scoreController.SetHealthBar(score, 200);
+            scoreController.SetHealthBar(score, 301);
         }
 
         score += scorePoint;
         txtScore.text = "Score: " + score;
 
 
-        scoreController.SetHealthBar(score, 200);
-        if (score == 50)
+        scoreController.SetHealthBar(score, 301);
+        switch (score)
         {
-            scoreController.turnOff_On();
+            case 50:
+                scoreController.turnOff_On(0);
+                break;
+            case 150:
+                scoreController.turnOff_On(1);
+                break;
+            case 300:
+                scoreController.turnOff_On(2);
+                break;
         }
     }
 
