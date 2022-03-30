@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2126942796}
   - component: {fileID: 2126942797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Freeform Light 2D (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,25 +91,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedHood Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5594225532862850757, guid: a169c44652197684ab576d8d4da5b971, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594225532862850757, guid: a169c44652197684ab576d8d4da5b971, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5594225532862850777, guid: a169c44652197684ab576d8d4da5b971, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5594225532862850777, guid: a169c44652197684ab576d8d4da5b971, type: 3}
       propertyPath: m_LocalScale.x
-      value: -3
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5594225532862850777, guid: a169c44652197684ab576d8d4da5b971, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5594225532862850777, guid: a169c44652197684ab576d8d4da5b971, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.97
+      value: -8.4
       objectReference: {fileID: 0}
     - target: {fileID: 5594225532862850777, guid: a169c44652197684ab576d8d4da5b971, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.17
+      value: -35.7
       objectReference: {fileID: 0}
     - target: {fileID: 5594225532862850777, guid: a169c44652197684ab576d8d4da5b971, type: 3}
       propertyPath: m_LocalPosition.z
@@ -215,6 +223,10 @@ PrefabInstance:
       propertyPath: OnAirEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5594225532982931056, guid: a169c44652197684ab576d8d4da5b971, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5594225533931434772, guid: a169c44652197684ab576d8d4da5b971, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.017
@@ -223,8 +235,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.176
       objectReference: {fileID: 0}
+    - target: {fileID: 5594225533931434773, guid: a169c44652197684ab576d8d4da5b971, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a169c44652197684ab576d8d4da5b971, type: 3}
+--- !u!1 &8798179665164624782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5594225532862850757, guid: a169c44652197684ab576d8d4da5b971, type: 3}
+  m_PrefabInstance: {fileID: 4016023059571279179}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8798179665164624786 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5594225532862850777, guid: a169c44652197684ab576d8d4da5b971, type: 3}
@@ -235,9 +256,25 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5594225532862850782, guid: a169c44652197684ab576d8d4da5b971, type: 3}
   m_PrefabInstance: {fileID: 4016023059571279179}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 8798179665164624782}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f3e3b32e2f19ab408d0a3d347579a77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2027950187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8798179665164624782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea24d3c1d248e276ac88454ffcb29e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterName: RedHood Variant
+  _maxHitPoint: 100
+  _hitPoint: 100
+  _heathBar: {fileID: 0}

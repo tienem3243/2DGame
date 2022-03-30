@@ -101,8 +101,20 @@ public class CharacterController2D : MonoBehaviour
 		}
         if (dash)
         {
-            // TODO:dsd
-        }
+            if (m_FacingRight)
+            {
+				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;
+				m_Rigidbody2D.velocity = Vector2.right * 40f;
+				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+			}
+            else
+            {
+				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;
+				m_Rigidbody2D.velocity = Vector2.left * 40f; //need change that to stat on character
+				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+			}
+				
+		}
         if (crouch)
         {
 			//todo

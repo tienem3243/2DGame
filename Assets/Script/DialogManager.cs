@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class DialogManager : MonoBehaviour
 {
    private Queue<string> sentenses;
-    public Text charName;
+    [Tooltip("Character Name")] public Text charName;
     public Text dialogText;
     public Animator animDialog;
     private void Start()
