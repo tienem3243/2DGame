@@ -21,8 +21,12 @@ public class MG_MT_NoteObject : MonoBehaviour
 
                 AudioSource.PlayClipAtPoint(noteSong, transform.position, 100);
 
-                Instantiate(hitEffect, transform.position, hitEffect.transform.rotation);
+                Instantiate(hitEffect, new Vector3(transform.position.x, transform.position.y, -3.0f)
+                , hitEffect.transform.rotation);
                 MG_MT_GameManager.instance.NoteHit(scorePoint);
+
+                //Destroy
+                Destroy(gameObject);
             }
         }
     }
@@ -32,6 +36,10 @@ public class MG_MT_NoteObject : MonoBehaviour
         if (other.tag == "Activator")
         {
             canBePressed = true;
+        }
+        if (other.tag == "Zone")
+        {
+            Destroy(gameObject);
         }
     }
 

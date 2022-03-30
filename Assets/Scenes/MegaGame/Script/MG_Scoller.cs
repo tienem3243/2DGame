@@ -32,13 +32,12 @@ public class MG_Scoller : MonoBehaviour
         {
             transform.position -= new Vector3(_tempo * Time.deltaTime, 0f, 0f);
 
-
             if (Time.time > timeWait)
             {
                 //spawn obj prefab
                 // Instantiate(_prefab, gameObject.transform.position, Quaternion.identity);
                 Instantiate(_prefab, new Vector3(-9, 0, 2), Quaternion.identity);
-                timeWait = Time.time + 5.0f;
+                timeWait += Time.time + 1.0f;
             }
 
         }
