@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour {
 	bool jump = false;
 	bool dash = false;
 	bool crouch = false;
-	int atkCount = 0;
+	bool atk = false;
 	// Update is called once per frame
 	void Update () {
 
@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour {
 		}
 		if (Input.GetButtonDown("MeleeAtack"))
         {
-			atkCount += 1;
+			atk = true;
 			Debug.Log("atk active");
         }
 	}
@@ -58,9 +58,13 @@ public class PlayerMovement : MonoBehaviour {
 	void FixedUpdate ()
 	{
 		// Move our character
-		controller.Move(horizontalMove * Time.fixedDeltaTime, jump,dash,crouch,atkCount);
+		if(atk==true)
+		Debug.Log(atk);
+        controller.Move(horizontalMove * Time.fixedDeltaTime, jump, dash, crouch, atk);
+		atk = false;
 		dash = false;
 		jump = false;
 		crouch = false;
+		
 	}
 }

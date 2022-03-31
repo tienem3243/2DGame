@@ -14,6 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level/Lv1.unity
     guid: 752a89b205c122143aa1378f97d46292
+  - enabled: 1
+    path: Assets/Scenes/Level/ArcadeRoom.unity
+    guid: bc5abf038f6d67743b9e712a1bec0995
+  - enabled: 1
+    path: Assets/Scenes/MegaGame/MenuMegaGame.unity
+    guid: e2018fca1036f22208be89e109aec88e
+  - enabled: 1
+    path: Assets/Scenes/MegaGame/MG_BanGa.unity
+    guid: ec8347d6b6fe61c699dcdc225c227d98
+  - enabled: 1
+    path: Assets/Scenes/MegaGame/MG_MagicTItle.unity
+    guid: 48a756927b3a0d033ac20c5f7d7def9f
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 098166c4e95453d0ea05b76a8d7deb36, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 1034b50f58b370643a1ad81fb1ca13b9, type: 2}

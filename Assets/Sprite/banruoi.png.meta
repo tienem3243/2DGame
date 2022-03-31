@@ -1,0 +1,1896 @@
+fileFormatVersion: 2
+guid: 48045ef746a98244ba4d16c1b88b1988
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4231839105701385369
+    second: banruoi_0
+  - first:
+      213: -4635488618338802636
+    second: banruoi_1
+  - first:
+      213: 6441557480804638769
+    second: banruoi_2
+  - first:
+      213: 6212248973379275857
+    second: banruoi_3
+  - first:
+      213: 5805827407438695171
+    second: banruoi_4
+  - first:
+      213: 5656904886377763583
+    second: banruoi_5
+  - first:
+      213: 7822456394452421982
+    second: banruoi_6
+  - first:
+      213: 8653873066090227806
+    second: banruoi_7
+  - first:
+      213: -8070199087094953700
+    second: banruoi_8
+  - first:
+      213: -7426246681022611772
+    second: banruoi_9
+  - first:
+      213: 5721243927507934425
+    second: banruoi_10
+  - first:
+      213: -4699042251821840400
+    second: banruoi_11
+  - first:
+      213: 2842614627802132769
+    second: banruoi_12
+  - first:
+      213: 9124687226165849656
+    second: banruoi_13
+  - first:
+      213: -8550899676441339151
+    second: banruoi_14
+  - first:
+      213: 6858581711732687604
+    second: banruoi_15
+  - first:
+      213: 4795886445537231882
+    second: banruoi_16
+  - first:
+      213: 4957911618591408760
+    second: banruoi_17
+  - first:
+      213: -8268069232380546251
+    second: banruoi_18
+  - first:
+      213: -8037182611229884361
+    second: banruoi_19
+  - first:
+      213: 1538077060932261123
+    second: banruoi_20
+  - first:
+      213: -8405486463718581669
+    second: banruoi_21
+  - first:
+      213: 8373763622485559581
+    second: banruoi_22
+  - first:
+      213: -4924835008882203318
+    second: banruoi_23
+  - first:
+      213: -1050930443139969117
+    second: banruoi_24
+  - first:
+      213: 2114753938924111693
+    second: banruoi_25
+  - first:
+      213: 3732927962633862199
+    second: banruoi_26
+  - first:
+      213: -8898420878687256308
+    second: banruoi_27
+  - first:
+      213: 3297999458340460672
+    second: banruoi_28
+  - first:
+      213: 3435425954147545877
+    second: banruoi_29
+  - first:
+      213: 4849910830468958675
+    second: banruoi_30
+  - first:
+      213: 7251374050136695845
+    second: banruoi_31
+  - first:
+      213: 2144277052075047013
+    second: banruoi_32
+  - first:
+      213: 1599552018800652417
+    second: banruoi_33
+  - first:
+      213: 4109284811345559775
+    second: banruoi_34
+  - first:
+      213: 7643251408578940262
+    second: banruoi_35
+  - first:
+      213: -2425632751437135340
+    second: banruoi_36
+  - first:
+      213: -6680762662362920367
+    second: banruoi_37
+  - first:
+      213: 196920909254968039
+    second: banruoi_38
+  - first:
+      213: -5978415276122513738
+    second: banruoi_39
+  - first:
+      213: 5373471247007347277
+    second: banruoi_40
+  - first:
+      213: 7516378071604894809
+    second: banruoi_41
+  - first:
+      213: -6292405820549269810
+    second: banruoi_42
+  - first:
+      213: 1716653695723310796
+    second: banruoi_43
+  - first:
+      213: 8187253064508456556
+    second: banruoi_44
+  - first:
+      213: 6254769048688473604
+    second: banruoi_45
+  - first:
+      213: -4342130868318083319
+    second: banruoi_46
+  - first:
+      213: -7558213299113808741
+    second: banruoi_47
+  - first:
+      213: -6482631566050053452
+    second: banruoi_48
+  - first:
+      213: 9174943559075662944
+    second: banruoi_49
+  - first:
+      213: 3081583934132538545
+    second: banruoi_50
+  - first:
+      213: 5993492925601491003
+    second: banruoi_51
+  - first:
+      213: -6426168519580359515
+    second: banruoi_52
+  - first:
+      213: 2609638189693789451
+    second: banruoi_53
+  - first:
+      213: 4919859577942462842
+    second: banruoi_54
+  - first:
+      213: -8536881543834526479
+    second: banruoi_55
+  - first:
+      213: -3098938752540411543
+    second: banruoi_56
+  - first:
+      213: 6932484185838505909
+    second: banruoi_57
+  - first:
+      213: -8130733669419547403
+    second: banruoi_58
+  - first:
+      213: -6097475957816085435
+    second: banruoi_59
+  - first:
+      213: 7587353668203943715
+    second: banruoi_60
+  - first:
+      213: 1177375273260876199
+    second: banruoi_61
+  - first:
+      213: 2831720342640087999
+    second: banruoi_62
+  - first:
+      213: 5215501867960581656
+    second: banruoi_63
+  - first:
+      213: -8645702061540663372
+    second: banruoi_64
+  - first:
+      213: 2202985805823442898
+    second: banruoi_65
+  - first:
+      213: -4962420048467970801
+    second: banruoi_66
+  - first:
+      213: -5516659068569660946
+    second: banruoi_67
+  - first:
+      213: 2349984975343588587
+    second: banruoi_68
+  - first:
+      213: 8998801399837931483
+    second: banruoi_69
+  - first:
+      213: 7661854437764708543
+    second: banruoi_70
+  - first:
+      213: -6956232791160895383
+    second: banruoi_71
+  - first:
+      213: 2736158460322689904
+    second: banruoi_72
+  - first:
+      213: -3746058886197329726
+    second: banruoi_73
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: banruoi_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3533
+        width: 206
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99410f1de338aba30800000000000000
+      internalID: 4231839105701385369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_1
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 3533
+        width: 209
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434ac8759af6bafb0800000000000000
+      internalID: -4635488618338802636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_2
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 3533
+        width: 209
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130ee936662056950800000000000000
+      internalID: 6441557480804638769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_3
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3533
+        width: 208
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c8e820787563650800000000000000
+      internalID: 6212248973379275857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_4
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 3533
+        width: 210
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b4c973441729050800000000000000
+      internalID: 5805827407438695171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_5
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 3533
+        width: 208
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2d7b8c50d518e40800000000000000
+      internalID: 5656904886377763583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_6
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 3533
+        width: 209
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5dc15645a2fe8c60800000000000000
+      internalID: 7822456394452421982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_7
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 3533
+        width: 209
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58e0a314bbb81870800000000000000
+      internalID: 8653873066090227806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_8
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 3533
+        width: 206
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19060320b4e00090800000000000000
+      internalID: -8070199087094953700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3091
+        width: 206
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce39335dfba0f890800000000000000
+      internalID: -7426246681022611772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_10
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 3091
+        width: 209
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc98742a01f56f40800000000000000
+      internalID: 5721243927507934425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_11
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 3091
+        width: 209
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f78b93f7f5a9ceb0800000000000000
+      internalID: -4699042251821840400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3091
+        width: 208
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121b97371fef27720800000000000000
+      internalID: 2842614627802132769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_13
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 3091
+        width: 210
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ee82200b661ae70800000000000000
+      internalID: 9124687226165849656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_14
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 3091
+        width: 208
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa16b38c0a155980800000000000000
+      internalID: -8550899676441339151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_15
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 3091
+        width: 209
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f241de7ab39e2f50800000000000000
+      internalID: 6858581711732687604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_16
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 3091
+        width: 209
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a048b5100596e8240800000000000000
+      internalID: 4795886445537231882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_17
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 3091
+        width: 206
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8724ce5595a0ec440800000000000000
+      internalID: 4957911618591408760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2650
+        width: 206
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533fe99d6dae14d80800000000000000
+      internalID: -8268069232380546251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_19
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2650
+        width: 209
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73042b67ff0367090800000000000000
+      internalID: -8037182611229884361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_20
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 2650
+        width: 209
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3055b0610f8585510800000000000000
+      internalID: 1538077060932261123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2650
+        width: 208
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a13bd6896b95b80800000000000000
+      internalID: -8405486463718581669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_22
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 2650
+        width: 210
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19075706a5953470800000000000000
+      internalID: 8373763622485559581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_23
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 2650
+        width: 208
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a452b2ef6a877abb0800000000000000
+      internalID: -4924835008882203318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_24
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 2650
+        width: 209
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af8ffc74585a61f0800000000000000
+      internalID: -1050930443139969117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_25
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 2650
+        width: 209
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d470ee4c08d195d10800000000000000
+      internalID: 2114753938924111693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_26
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 2650
+        width: 206
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cf9e044360ec330800000000000000
+      internalID: 3732927962633862199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2208
+        width: 206
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c014def4b55728480800000000000000
+      internalID: -8898420878687256308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_28
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2208
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08850d7a809d4cd20800000000000000
+      internalID: 3297999458340460672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 2208
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5133f1124b51daf20800000000000000
+      internalID: 3435425954147545877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_30
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2208
+        width: 208
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d90c6254385e4340800000000000000
+      internalID: 4849910830468958675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_31
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 2208
+        width: 210
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52422e7774e02a460800000000000000
+      internalID: 7251374050136695845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_32
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 2208
+        width: 208
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56874f43e9002cd10800000000000000
+      internalID: 2144277052075047013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_33
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 2208
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1803f581610c23610800000000000000
+      internalID: 1599552018800652417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_34
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 2208
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0092593cc170930800000000000000
+      internalID: 4109284811345559775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_35
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 2208
+        width: 206
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d0a5119a8421a60800000000000000
+      internalID: 7643251408578940262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1766
+        width: 206
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41249073ddb665ed0800000000000000
+      internalID: -2425632751437135340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_37
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1766
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a4a2931c92943a0800000000000000
+      internalID: -6680762662362920367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_38
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1766
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e24dfc068a9bb200800000000000000
+      internalID: 196920909254968039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_39
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1766
+        width: 208
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bed2fa3bf6680da0800000000000000
+      internalID: -5978415276122513738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_40
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1766
+        width: 210
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42f5a811a7629a40800000000000000
+      internalID: 5373471247007347277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_41
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1766
+        width: 208
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c9b8b580a8f4860800000000000000
+      internalID: 7516378071604894809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_42
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1766
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec67f8bae32eca8a0800000000000000
+      internalID: -6292405820549269810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_43
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 1766
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce03f7e077c2d710800000000000000
+      internalID: 1716653695723310796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_44
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1766
+        width: 206
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e3144c847fe9170800000000000000
+      internalID: 8187253064508456556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1324
+        width: 206
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4063f238f476dc650800000000000000
+      internalID: 6254769048688473604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_46
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1324
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90764a91bf6adb3c0800000000000000
+      internalID: -4342130868318083319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_47
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1324
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c20b1bc05db1790800000000000000
+      internalID: -7558213299113808741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_48
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1324
+        width: 208
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b23ad7efe01906a0800000000000000
+      internalID: -6482631566050053452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_49
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1324
+        width: 210
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c86f85e82f35f70800000000000000
+      internalID: 9174943559075662944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_50
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 1324
+        width: 208
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc458bd24cf3ca20800000000000000
+      internalID: 3081583934132538545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_51
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1324
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b382b4a9f0a2d2350800000000000000
+      internalID: 5993492925601491003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_52
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 1324
+        width: 209
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a46d9b57c9a1d6a0800000000000000
+      internalID: -6426168519580359515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_53
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1324
+        width: 206
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05edf86b1c473420800000000000000
+      internalID: 2609638189693789451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 881
+        width: 206
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a715018383ad64440800000000000000
+      internalID: 4919859577942462842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_55
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 881
+        width: 209
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc972a5777e68980800000000000000
+      internalID: -8536881543834526479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_56
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 881
+        width: 209
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969f22a9f9b5ef4d0800000000000000
+      internalID: -3098938752540411543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_57
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 881
+        width: 208
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfcaeb13a1253060800000000000000
+      internalID: 6932484185838505909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_58
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 881
+        width: 210
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f480fe5ec4d92f80800000000000000
+      internalID: -8130733669419547403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_59
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 881
+        width: 208
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54433e31ce9616ba0800000000000000
+      internalID: -6097475957816085435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_60
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 881
+        width: 209
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3279d8236f1bb4960800000000000000
+      internalID: 7587353668203943715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_61
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 881
+        width: 209
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a10b02b290e65010800000000000000
+      internalID: 1177375273260876199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_62
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 881
+        width: 206
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb35f4606aa4c4720800000000000000
+      internalID: 2831720342640087999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 206
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e3d25e05f216840800000000000000
+      internalID: 5215501867960581656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 439
+        width: 206
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf910c28cb440880800000000000000
+      internalID: -8645702061540663372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_65
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 254
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df75512be3929e10800000000000000
+      internalID: 2202985805823442898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_66
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 439
+        width: 209
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f053ac80241f12bb0800000000000000
+      internalID: -4962420048467970801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_67
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 439
+        width: 209
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1d7fe3ec3e073b0800000000000000
+      internalID: -5516659068569660946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_68
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 1322
+        height: 877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be41cd262e2dc9020800000000000000
+      internalID: 2349984975343588587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_69
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 439
+        width: 208
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7b0a9023a22ec70800000000000000
+      internalID: 8998801399837931483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_70
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 439
+        width: 210
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb837b35400645a60800000000000000
+      internalID: 7661854437764708543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_71
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 439
+        width: 208
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9684ee3d12f767f90800000000000000
+      internalID: -6956232791160895383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_72
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 439
+        width: 209
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073b6b47f99c8f520800000000000000
+      internalID: 2736158460322689904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banruoi_73
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 439
+        width: 209
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0438c5a43530cc0800000000000000
+      internalID: -3746058886197329726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

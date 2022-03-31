@@ -66,7 +66,7 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
-	public void Move(float move, bool jump, bool dash,bool crouch,int atk)
+	public void Move(float move, bool jump, bool dash,bool crouch,bool atk)
 	{
 	
 
@@ -99,7 +99,7 @@ public class CharacterController2D : MonoBehaviour
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
-        if (dash)
+        if (dash&&m_Grounded)
         {
             if (m_FacingRight)
             {
@@ -119,7 +119,7 @@ public class CharacterController2D : MonoBehaviour
         {
 			//todo
         }
-        if (atk > 0)
+        if (atk)
         {
 			atkSys.Melee(3);
         }
