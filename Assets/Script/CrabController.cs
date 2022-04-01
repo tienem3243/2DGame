@@ -32,7 +32,7 @@ public class CrabController : MonoBehaviour
 
             _currentWaypointIndex = (_currentWaypointIndex + 1) % waypoints.Length;
 
-            _animator.SetBool("isRun", false);
+            _animator.SetBool("IsRun", false);
         }
         else
         {
@@ -41,7 +41,7 @@ public class CrabController : MonoBehaviour
                 wp.position,
                 _speed * Time.deltaTime);
 
-            _animator.SetBool("isRun", true);
+            _animator.SetBool("IsRun", true);
 
 
             // for 3D
