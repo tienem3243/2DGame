@@ -10,8 +10,6 @@ public class LowGravityZone : MonoBehaviour
     private float base_gravity;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-
             base_gravity = collision.GetComponent<Rigidbody2D>().gravityScale;
             collision.GetComponent<Rigidbody2D>().gravityScale = -gravityForce;
         

@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour {
 	public CharacterController2D controller;
 	public Animator animator;
 	public float runSpeed = 40f;
-
 	float horizontalMove = 0f;
 	bool jump = false;
 	bool dash = false;
@@ -45,11 +44,12 @@ public class PlayerMovement : MonoBehaviour {
 	public void OnLanding ()
 	{
 		animator.SetBool("IsJumping", false);
-		Debug.Log("active funtion onlanding");
+		animator.SetBool("IsGround",true);
 	}
 	public void OnAir()
 	{
 		animator.SetBool("IsJumping", true);
+		animator.SetBool("IsGround", false);
 	}
 
 

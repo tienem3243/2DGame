@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -5,12 +6,12 @@ public class CharacterController2D : MonoBehaviour
 {
 	[SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
 	[SerializeField] private float m_dashForce = 40f;
-	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
-	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
-	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
-	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
-	[SerializeField] private Transform m_CeilingCheck;							// A position marking where to check for ceilings
-	[SerializeField] private Collider2D m_CrouchDisableCollider;				// A collider that will be disabled when crouching
+	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
+	[SerializeField] private bool m_AirControl = false;                         // Whether or not a player can steer while jumping;
+	[SerializeField] private LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
+	[SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
+	[SerializeField] private Transform m_CeilingCheck;                          // A position marking where to check for ceilings
+	[SerializeField] private Collider2D m_CrouchDisableCollider;                // A collider that will be disabled when crouching
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
@@ -19,8 +20,11 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
+
 	[SerializeField]
 	AtkSys atkSys;
+
+	Collider2D _colDash, _colStand;
 
 	[Header("Events")]
 	[Space]
@@ -34,7 +38,8 @@ public class CharacterController2D : MonoBehaviour
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
-
+		_colStand = GetComponent<CapsuleCollider2D>();
+		_colDash = GetComponent<PolygonCollider2D>();
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
 		if (OnAirEvent == null)
@@ -50,25 +55,29 @@ public class CharacterController2D : MonoBehaviour
 		// This can be done using layers instead but Sample Assets will not overwrite your project settings.
 		// Creat a array that hold many object was scaned by cursor, Physic2D.OverlapCircleAll(cursor position,radius,layer need)
 		Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
-        if (colliders.Length == 0)
-        {
+		if (colliders.Length == 0)
+		{
 			OnAirEvent.Invoke();
 		}
 		for (int i = 0; i < colliders.Length; i++)
 		{
 			if (colliders[i].gameObject != gameObject)
 			{
+
 				m_Grounded = true;
 				if (!wasGrounded)
+				{
 					OnLandEvent.Invoke();
+				}
+
 			}
 		}
 	}
 
 
-	public void Move(float move, bool jump, bool dash,bool crouch,bool atk)
+	public void Move(float move, bool jump, bool dash, bool crouch, bool atk)
 	{
-	
+
 
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
@@ -99,30 +108,33 @@ public class CharacterController2D : MonoBehaviour
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
-        if (dash && m_Grounded)
-        {
-            if (m_FacingRight)
-            {
+		if (dash && m_Grounded)
+		{
+			_colStand.enabled = false;
+			_colDash.enabled = true;
+			if (m_FacingRight)
+			{
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;
-				m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, Vector2.right*m_dashForce, ref m_Velocity, m_MovementSmoothing);
+				m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, Vector2.right * m_dashForce, ref m_Velocity, m_MovementSmoothing);
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 			}
-            else
-            {
+			else
+			{
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;
 				m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, Vector2.left * m_dashForce, ref m_Velocity, m_MovementSmoothing);
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 			}
-				
+			StartCoroutine(WaitforDashEnd());
+
 		}
-        if (crouch)
-        {
+		if (crouch)
+		{
 			//todo
-        }
-        if (atk)
-        {
+		}
+		if (atk)
+		{
 			atkSys.Melee(3);
-        }
+		}
 	}
 
 
@@ -135,5 +147,12 @@ public class CharacterController2D : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+	IEnumerator WaitforDashEnd()
+	{
+		Debug.Log("gogog");
+			yield return new WaitForSeconds(.1f);
+		_colDash.enabled = false;
+		_colStand.enabled = true;
 	}
 }
