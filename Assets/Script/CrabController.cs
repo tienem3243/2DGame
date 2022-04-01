@@ -7,11 +7,16 @@ public class CrabController : MonoBehaviour
     public Animator _animator;
     public Transform[] waypoints;
     private int _currentWaypointIndex = 0;
+
+    [SerializeField]
     private float _speed = 5f;
 
+    [SerializeField]
     private float _waitTime = 1f; // in seconds
     private float _waitCounter = 0f;
     private bool _waiting = false;
+
+    private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
     private void Update()
     {
@@ -21,6 +26,7 @@ public class CrabController : MonoBehaviour
             if (_waitCounter < _waitTime)
                 return;
             _waiting = false;
+            _animator.SetBool("IsRun", true);
         }
 
         Transform wp = waypoints[_currentWaypointIndex];
@@ -33,6 +39,8 @@ public class CrabController : MonoBehaviour
             _currentWaypointIndex = (_currentWaypointIndex + 1) % waypoints.Length;
 
             _animator.SetBool("IsRun", false);
+            Flip();
+
         }
         else
         {
@@ -41,11 +49,21 @@ public class CrabController : MonoBehaviour
                 wp.position,
                 _speed * Time.deltaTime);
 
-            _animator.SetBool("IsRun", true);
 
 
             // for 3D
             // transform.LookAt(wp.position);
         }
+    }
+
+    private void Flip()
+    {
+        // Switch the way the player is labelled as facing.
+        m_FacingRight = !m_FacingRight;
+
+        // Multiply the player's x local scale by -1.
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 }
