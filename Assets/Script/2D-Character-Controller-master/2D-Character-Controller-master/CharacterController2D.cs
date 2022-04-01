@@ -3,7 +3,8 @@ using UnityEngine.Events;
 
 public class CharacterController2D : MonoBehaviour
 {
-	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
+	[SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
+	[SerializeField] private float m_dashForce = 40f;
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
@@ -19,7 +20,7 @@ public class CharacterController2D : MonoBehaviour
 	private Vector3 m_Velocity = Vector3.zero;
 
 	[SerializeField]
-	AtackSystem atkSys;
+	AtkSys atkSys;
 
 	[Header("Events")]
 	[Space]
@@ -52,7 +53,6 @@ public class CharacterController2D : MonoBehaviour
         if (colliders.Length == 0)
         {
 			OnAirEvent.Invoke();
-			Debug.Log(colliders.Length);
 		}
 		for (int i = 0; i < colliders.Length; i++)
 		{
@@ -99,18 +99,18 @@ public class CharacterController2D : MonoBehaviour
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
-        if (dash&&m_Grounded)
+        if (dash && m_Grounded)
         {
             if (m_FacingRight)
             {
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;
-				m_Rigidbody2D.velocity = Vector2.right * 40f;
+				m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, Vector2.right*m_dashForce, ref m_Velocity, m_MovementSmoothing);
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 			}
             else
             {
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;
-				m_Rigidbody2D.velocity = Vector2.left * 40f; //need change that to stat on character
+				m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, Vector2.left * m_dashForce, ref m_Velocity, m_MovementSmoothing);
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 			}
 				

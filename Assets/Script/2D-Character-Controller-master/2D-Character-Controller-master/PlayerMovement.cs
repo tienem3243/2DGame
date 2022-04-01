@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour {
 
 	public CharacterController2D controller;
 	public Animator animator;
-
 	public float runSpeed = 40f;
 
 	float horizontalMove = 0f;
@@ -51,7 +50,6 @@ public class PlayerMovement : MonoBehaviour {
 	public void OnAir()
 	{
 		animator.SetBool("IsJumping", true);
-		Debug.Log("Fall");
 	}
 
 
