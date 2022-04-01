@@ -127,14 +127,7 @@ public class CharacterController2D : MonoBehaviour
 			StartCoroutine(WaitforDashEnd());
 
 		}
-		if (crouch)
-		{
-			//todo
-		}
-		if (atk)
-		{
-			atkSys.Melee(3);
-		}
+	
 	}
 
 
@@ -150,7 +143,6 @@ public class CharacterController2D : MonoBehaviour
 	}
 	IEnumerator WaitforDashEnd()
 	{
-		Debug.Log("gogog");
 			yield return new WaitForSeconds(.1f);
 		_colDash.enabled = false;
 		_colStand.enabled = true;

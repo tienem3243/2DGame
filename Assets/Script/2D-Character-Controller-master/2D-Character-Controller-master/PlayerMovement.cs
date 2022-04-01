@@ -37,7 +37,6 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetButtonDown("MeleeAtack"))
         {
 			atk = true;
-			Debug.Log("atk active");
         }
 	}
 
@@ -55,9 +54,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate ()
 	{
-		// Move our character
-		if(atk==true)
-		Debug.Log(atk);
+
         controller.Move(horizontalMove * Time.fixedDeltaTime, jump, dash, crouch, atk);
 		atk = false;
 		dash = false;
