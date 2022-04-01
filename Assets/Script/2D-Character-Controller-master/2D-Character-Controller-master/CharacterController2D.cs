@@ -147,4 +147,6 @@ public class CharacterController2D : MonoBehaviour
 		_colDash.enabled = false;
 		_colStand.enabled = true;
 	}
+
+	
 }
