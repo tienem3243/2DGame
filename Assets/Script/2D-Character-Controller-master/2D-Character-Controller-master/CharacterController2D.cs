@@ -78,7 +78,6 @@ public class CharacterController2D : MonoBehaviour
 	public void Move(float move, bool jump, bool dash, bool crouch, bool atk)
 	{
 
-
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{
@@ -127,6 +126,7 @@ public class CharacterController2D : MonoBehaviour
 			StartCoroutine(WaitforDashEnd());
 
 		}
+       
 	
 	}
 
