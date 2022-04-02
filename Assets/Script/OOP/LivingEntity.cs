@@ -17,12 +17,18 @@ public abstract class LivingEntity : MonoBehaviour
     [SerializeField]
     protected HeathBarController _heathBar;
 
+    public static LivingEntity _instance;
+    // public bool _isMoveAble;
+    public GameObject _deathEffect;
+    public AudioClip _deathSound;
     // private Animator _animDead;
     // public AnimationClip deadEffect;
 
     /// <summary> make healbar display </summary> 
     private void Start()
     {
+        // _isMoveAble = true;
+        // _instance = this;
         // _deadEffect.clip = deadEffect;
         // _animDead = gameObject.GetComponent<Animator>();
         _heathBar.SetHealthBar(_hitPoint, _maxHitPoint);
@@ -37,6 +43,21 @@ public abstract class LivingEntity : MonoBehaviour
     public void EntityDestroy()
     {
         // _animDead.SetBool("IsDead", true);
+
+
+        gameObject.SetActive(false);
+
+        if (_deathSound != null)
+        {
+            AudioSource.PlayClipAtPoint(_deathSound, transform.position, 100);
+        }
+
+        // this.GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f, 0f);
+
+        if (_deathEffect != null)
+        {
+            Instantiate(_deathEffect, transform.position, _deathEffect.transform.rotation);
+        }
         Destroy(gameObject, 3);
     }
 
