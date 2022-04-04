@@ -21,29 +21,29 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: ca930d29c6c77774c8376928c72f7b39, type: 3}
-    - time: 0.041666668
+    - time: 0.055555556
       value: {fileID: 21300000, guid: f3c2eab720a27c44aa0d49d13026dd4c, type: 3}
-    - time: 0.083333336
+    - time: 0.11111111
       value: {fileID: 21300000, guid: 621be5c5b8dbd9c4091c093b01a1be4e, type: 3}
-    - time: 0.125
-      value: {fileID: 21300000, guid: c77dd06c09115d546bb7ca348e8c5665, type: 3}
     - time: 0.16666667
+      value: {fileID: 21300000, guid: c77dd06c09115d546bb7ca348e8c5665, type: 3}
+    - time: 0.22222222
       value: {fileID: 21300000, guid: 30c8a0ea5756a2141924f0ec52e99351, type: 3}
-    - time: 0.20833333
+    - time: 0.2777778
       value: {fileID: 21300000, guid: a5041d04ccf7926458ee975ecb6dedc4, type: 3}
-    - time: 0.25
-      value: {fileID: 21300000, guid: 0b103044f1d1d4243a23517e8ed5e1dd, type: 3}
-    - time: 0.29166666
-      value: {fileID: 21300000, guid: 5c49b63355af9634ebfe72f8b6fcf3fb, type: 3}
     - time: 0.33333334
+      value: {fileID: 21300000, guid: 0b103044f1d1d4243a23517e8ed5e1dd, type: 3}
+    - time: 0.3888889
+      value: {fileID: 21300000, guid: 5c49b63355af9634ebfe72f8b6fcf3fb, type: 3}
+    - time: 0.44444445
       value: {fileID: 21300000, guid: 3de189fbc19eafa489f034945b462b5b, type: 3}
-    - time: 0.375
+    - time: 0.5
       value: {fileID: 21300000, guid: f642a576f32631144a6e6ce80aafac3c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 24
+  m_SampleRate: 18
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -73,7 +73,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.41666666
+    m_StopTime: 0.5555556
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -93,14 +93,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.125
+  - time: 0.16666667
     functionName: Start_Combo
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.375
+  - time: 0.5
     functionName: FinshCombo
     data: 
     objectReferenceParameter: {fileID: 0}

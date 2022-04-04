@@ -14229,7 +14229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995722598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.817042, y: 1.8333409, z: -15.030001}
+  m_LocalPosition: {x: -4.8102756, y: 1.8321896, z: -15.030001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 133685409}
@@ -14766,7 +14766,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -15.236097, y: 8.089548}
+    - - {x: -15.214434, y: 8.508388}
       - {x: -15.171051, y: -8.120363}
       - {x: -17.573141, y: -8.186714}
       - {x: -17.79842, y: -25.661184}
@@ -14781,10 +14781,11 @@ PolygonCollider2D:
       - {x: 28.558285, y: 4.7820425}
       - {x: 23.548616, y: 4.8441334}
       - {x: 23.419834, y: 7.8086567}
-      - {x: 20.116787, y: 7.77573}
-      - {x: 15.206779, y: 7.861767}
-      - {x: 4.5942755, y: 7.6064415}
-      - {x: 0.34018183, y: 7.8241963}
+      - {x: 20.592283, y: 7.9563475}
+      - {x: 20.03057, y: 7.9912796}
+      - {x: 15.206779, y: 8.335975}
+      - {x: 4.8964915, y: 8.550867}
+      - {x: 0.2646278, y: 8.579737}
 --- !u!4 &1169332978
 Transform:
   m_ObjectHideFlags: 0
@@ -37119,26 +37120,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 709347436, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 2071694896}
-    - target: {fileID: 2027950187, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: gui
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027950187, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: _atk
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027950187, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: _heathBar
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2027950187, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8798179665164624782, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
       propertyPath: m_Name
       value: RedHood Variant
@@ -37576,17 +37557,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2071694896 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2027950187, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-  m_PrefabInstance: {fileID: 1895270169}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ea24d3c1d248e276ac88454ffcb29e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2075618648
 GameObject:
   m_ObjectHideFlags: 0
