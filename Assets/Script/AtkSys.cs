@@ -17,7 +17,7 @@ public class AtkSys : MonoBehaviour
     private void Start()
     {
     }
-    private void Update()
+    private void LateUpdate()
     {
         if (Input.GetButtonDown("MeleeAtack"))
         {
@@ -25,7 +25,7 @@ public class AtkSys : MonoBehaviour
         }
         else
         {
-           if(Input.anyKeyDown&& !Input.GetButtonDown("MeleeAtack")){
+           if(Input.anyKey&& !Input.GetButton("MeleeAtack")){
                 _atk = false;
                 _combo = 1;   
             }

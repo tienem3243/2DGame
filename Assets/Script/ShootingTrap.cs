@@ -8,12 +8,12 @@ public class ShootingTrap : MonoBehaviour
     public Transform _laserFirePoint;
      [Range(0,200)] [SerializeField] private float defDistantRay=100;
     public LineRenderer _lineRenderer;
-
+    public LayerMask whereHit;
     private void Awake()
     {
         _transform = GetComponent<Transform>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         ShootLaser();
     }
@@ -21,7 +21,7 @@ public class ShootingTrap : MonoBehaviour
     {
         if (Physics2D.Raycast(_transform.position, transform.right))
         {
-            RaycastHit2D _hit = Physics2D.Raycast(_laserFirePoint.position, transform.right);
+            RaycastHit2D _hit = Physics2D.Raycast(_laserFirePoint.position, transform.right * defDistantRay,defDistantRay,whereHit,-5,0);
             Draw2DRay(_laserFirePoint.position, _hit.point);
         }
         else
