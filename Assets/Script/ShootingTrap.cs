@@ -22,7 +22,7 @@ public class ShootingTrap : MonoBehaviour
         if (Physics2D.Raycast(_transform.position, transform.right))
         {
             RaycastHit2D _hit = Physics2D.Raycast(_laserFirePoint.position, transform.right);
-            Draw2DRay(_laserFirePoint.position, _hit.point);  
+            Draw2DRay(_laserFirePoint.position, _hit.point);
         }
         else
         {

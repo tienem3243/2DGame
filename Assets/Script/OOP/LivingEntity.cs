@@ -14,8 +14,6 @@ public abstract class LivingEntity : MonoBehaviour
     protected float _maxHitPoint;
     [SerializeField]
     protected float _hitPoint;
-    [SerializeField]
-    protected HeathBarController _heathBar;
 
     public static LivingEntity _instance;
     // public bool _isMoveAble;
@@ -31,7 +29,7 @@ public abstract class LivingEntity : MonoBehaviour
         // _instance = this;
         // _deadEffect.clip = deadEffect;
         // _animDead = gameObject.GetComponent<Animator>();
-        _heathBar.SetHealthBar(_hitPoint, _maxHitPoint);
+        //_heathBar.SetHealthBar(_hitPoint, _maxHitPoint);
     }
     public abstract void takeDamage(float damage);
 
@@ -40,10 +38,11 @@ public abstract class LivingEntity : MonoBehaviour
     //     _hitPoint = Mathf.Clamp(_hitPoint, 0, _maxHitPoint);
     // }
 
-    public void EntityDestroy()
+    public abstract void EntityDestroy();
+/*
+ 
     {
         // _animDead.SetBool("IsDead", true);
-
 
         gameObject.SetActive(false);
 
@@ -60,5 +59,5 @@ public abstract class LivingEntity : MonoBehaviour
         }
         Destroy(gameObject, 3);
     }
-
+*/
 }

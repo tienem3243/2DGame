@@ -13,6 +13,10 @@ public class AtkSys : MonoBehaviour
     public bool _atk=false;
     private float Bonusdame;
     public Animator _anim;
+    public Player player;
+    private void Start()
+    {
+    }
     private void Update()
     {
         if (Input.GetButtonDown("MeleeAtack"))
@@ -29,7 +33,7 @@ public class AtkSys : MonoBehaviour
         }
             
     }
-    public void Melee(int dame)
+    public void Melee(float dame)
     {
         Collider2D[] col = Physics2D.OverlapCircleAll(atackPoint.transform.position, atkRage, enermyLayer);
         if (col != null)
@@ -47,13 +51,13 @@ public class AtkSys : MonoBehaviour
         if (_combo < maxCombo)
         {
             _combo++;
-             Melee(20);
+             Melee(player.GetAtk());
         }
         else
         {
             if (_combo == maxCombo)
             {
-                Melee(40);//todo Need scale with total stat of player
+                Melee(player.GetAtk()*2);
             }        
             _combo = 1;
         }
