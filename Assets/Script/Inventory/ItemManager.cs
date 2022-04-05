@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Chest_ItemManager : MonoBehaviour
+public class ItemManager : MonoBehaviour
 {
     public List<Item> items = new List<Item>();
     public List<int> itemNumbers = new List<int>();
     public GameObject[] slots;
 
+    public static ItemManager instance;
+
     private void Start()
     {
+        instance = this;
         DisplayItem();
     }
 
@@ -28,4 +31,10 @@ public class Chest_ItemManager : MonoBehaviour
 
         }
     }
+
+    public void removeItem(int pos)
+    {
+        Debug.Log("Item " + pos + " removed");
+    }
+
 }

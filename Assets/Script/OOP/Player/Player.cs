@@ -2,11 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : LivingEntity 
+public class Player : LivingEntity
 {
     [SerializeField] private float _atk;
     [SerializeField] private float _def;
     public GUIPlayer gui;
+
+    [Header("Inventory")]
+    public bool _isOpen;
+    public GameObject _inventoryPlayerMenu;
+
+    private void Start()
+    {
+        _isOpen = false;
+        _inventoryPlayerMenu.gameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            _isOpen = !_isOpen;
+            _inventoryPlayerMenu.gameObject.SetActive(_isOpen);
+        }
+    }
+
     public override void takeDamage(float damage)
     {
         base._hitPoint -= damage;

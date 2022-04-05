@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 223328256}
   - component: {fileID: 223328255}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Chest Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1083,18 +1083,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7023987295743706896, guid: bac8eec850dd80af883a76e4a3c7dd44, type: 3}
   m_PrefabInstance: {fileID: 7023987296625582259}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1603299238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603299234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cc8f2528980d004680bc01a9dbeaa88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1733307938
 PrefabInstance:
   m_ObjectHideFlags: 0
