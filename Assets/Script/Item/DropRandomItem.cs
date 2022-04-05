@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class DropRandomItem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static DropRandomItem _instance;
+    public Item[] _prefab;
+
+    private void Start()
     {
-        
+        _instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void dropRandomItem()
     {
-        
+        int pos = Random.Range(0, _prefab.Length);
+        Instantiate(_prefab[pos], gameObject.transform.position, Quaternion.identity);
     }
 }

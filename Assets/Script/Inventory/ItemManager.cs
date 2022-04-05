@@ -32,6 +32,11 @@ public class ItemManager : MonoBehaviour
         }
     }
 
+    public void addItem(Item item)
+    {
+        Debug.Log("Add item to your inventory : " + item.itemName);
+    }
+
     public void removeItem(int pos)
     {
         Debug.Log("Item " + pos + " removed");

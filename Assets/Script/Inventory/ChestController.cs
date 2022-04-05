@@ -48,7 +48,7 @@ public class ChestController : MonoBehaviour
         invertoryChestMenu.gameObject.SetActive(_isOpen);
 
         //test
-        
+
         // test
         anim.SetBool("IsOpen", _isOpen);
     }
