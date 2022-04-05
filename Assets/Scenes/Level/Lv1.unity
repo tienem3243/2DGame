@@ -42032,6 +42032,10 @@ PrefabInstance:
       propertyPath: gui
       value: 
       objectReference: {fileID: 12667288}
+    - target: {fileID: 2027950187, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
+      propertyPath: _atk
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8798179665164624782, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
       propertyPath: m_Name
       value: RedHood Variant
