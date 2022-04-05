@@ -44,7 +44,7 @@ public class MeleeAtkSys : MonoBehaviour
             {
                 Debug.Log("atack " + enemy.name + " " + dame);
                 enemy.GetComponent<Enemy>().takeDamage(dame);
-                Instantiate(hitEffect, atackPoint.transform.position, Quaternion.identity);
+                Instantiate(hitEffect, enemy.transform.position, Quaternion.identity);
                //I will make that change when again many enermy
                 soundManager.PlaySound("hit");
             }

@@ -11,7 +11,7 @@ public class Enemy : LivingEntity
     {
         Instantiate(_heathBar, transform);
         _heathBar = GetComponentInChildren<HeathBarController>();
-        _heathBar.setCanvasGroupAlpha(0);
+        _heathBar.setCanvasGroupAlpha(0);//just like other alpha that can make it invisible
         _heathBar.SetHealthBar(_hitPoint, _maxHitPoint);
     }
     public override void takeDamage(float damage)
