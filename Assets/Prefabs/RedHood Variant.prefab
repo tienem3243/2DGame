@@ -77,7 +77,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.736
   m_Color: {r: 0.9245283, g: 0.51614606, b: 0.13431823, a: 1}
-  m_Intensity: 6.47
+  m_Intensity: 1.47
   m_LightVolumeOpacity: 0.029
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
@@ -367,6 +367,7 @@ MonoBehaviour:
   _atk: 0
   _anim: {fileID: 8798179665164624787}
   player: {fileID: 2027950187}
+  soundManager: {fileID: 0}
   hitEffect: {fileID: 1041462709008884362, guid: 2afce42a24b9278439d16b4498ee60d3, type: 3}
 --- !u!114 &2027950187
 MonoBehaviour:
@@ -385,7 +386,7 @@ MonoBehaviour:
   _hitPoint: 100
   _deathEffect: {fileID: 0}
   _deathSound: {fileID: 0}
-  _atk: 20
+  _atk: 1
   _def: 0
   gui: {fileID: 0}
   _isOpen: 0

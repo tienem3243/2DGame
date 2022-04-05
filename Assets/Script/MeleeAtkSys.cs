@@ -15,7 +15,6 @@ public class MeleeAtkSys : MonoBehaviour
     public Animator _anim;
     public Player player;
     public SoundManager soundManager;
-    private bool capable; //variable that tell you the combo aniamtion was start or not
    [SerializeField] private GameObject hitEffect;
     private void Start()
     {
@@ -82,20 +81,15 @@ public class MeleeAtkSys : MonoBehaviour
         if (Input.GetButtonDown("MeleeAtack")&&!_atk)
         {
             _anim.SetTrigger("combo" + _combo);
-            if (capable)
-            {
+      
                 _atk = true;
-            }
+       
+    
             Debug.Log(_combo);
         }
     }
 
 
-
-    public void ComboIsEnable()
-    {
-        capable = true;
-    }
     //gizmos draw range of atk
 
     void OnDrawGizmosSelected()
