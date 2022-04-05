@@ -18,13 +18,14 @@ public class EnemyPathController : MonoBehaviour
 
     private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
        for(int i=0;i<waypoints.Length-1;i++)
         {
             Debug.DrawLine(waypoints[i].position,waypoints[i+1].position,Color.green);
         }
     }
+  
     private void Update()
     {
         
