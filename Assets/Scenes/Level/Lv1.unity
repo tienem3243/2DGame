@@ -42861,6 +42861,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1215260536}
+    - target: {fileID: 8331165544938239072, guid: 3b1915b7dfd5fe145988129eba0076d1, type: 3}
+      propertyPath: _heathBar
+      value: 
+      objectReference: {fileID: 458135095966298544, guid: 2d2ee5fcc6384c145a7ef69988e61f61, type: 3}
     - target: {fileID: 8331165544938239073, guid: 3b1915b7dfd5fe145988129eba0076d1, type: 3}
       propertyPath: m_Name
       value: NeoCrab

@@ -9,14 +9,18 @@ public class Enemy : LivingEntity
     private bool isVisualHP;//variable that decide when hp is visible
     private void Start()
     {
+        Instantiate(_heathBar, transform);
+        _heathBar = GetComponentInChildren<HeathBarController>();
+        _heathBar.setCanvasGroupAlpha(0);
         _heathBar.SetHealthBar(_hitPoint, _maxHitPoint);
     }
     public override void takeDamage(float damage)
     {
         if (base._hitPoint < _maxHitPoint&& !isVisualHP)
         {
+            _heathBar.setCanvasGroupAlpha(1);
             isVisualHP = true;
-            Instantiate(_heathBar, transform);
+           
         }
         Mathf.Clamp(base._hitPoint, 0, base._maxHitPoint);
         base._hitPoint -= damage;

@@ -10,6 +10,7 @@ public class HeathBarController : MonoBehaviour
     public Color _low;
     public Color _high;
     public Vector3 _offset;
+    [SerializeField]private CanvasGroup canvasG;
 
     /// <summary>Set heal bar for display entity's Heath.</summary>
     /// <param name="health"> description </param>
@@ -26,5 +27,9 @@ public class HeathBarController : MonoBehaviour
     {
         // make HeathBar/Slider move with parant position
         _slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + _offset);
+    }
+    public void setCanvasGroupAlpha(float value)
+    {
+        canvasG.alpha = value;
     }
 }
