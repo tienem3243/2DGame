@@ -14338,7 +14338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995722598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.462831, y: 1.5272219, z: -15.030001}
+  m_LocalPosition: {x: -0.32449484, y: 1.0927677, z: -15.030001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 133685409}
@@ -42026,7 +42026,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 709347436, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
       propertyPath: atkRage
-      value: 2.11
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 709347436, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
       propertyPath: soundManager
