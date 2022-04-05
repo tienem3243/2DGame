@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.30939633, g: 0.74, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -303,7 +303,6 @@ MonoBehaviour:
   _low: {r: 0.990566, g: 0, b: 0, a: 1}
   _high: {r: 0.07006645, g: 1, b: 0, a: 1}
   _offset: {x: 0, y: 1.5, z: 0}
-  cam: {fileID: 0}
 --- !u!1 &458135096414907627
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,7 +319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &458135096414907626
 RectTransform:
   m_ObjectHideFlags: 0
@@ -387,9 +386,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 74
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

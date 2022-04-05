@@ -7,6 +7,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 272253252562703438, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 272253253646211972, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 272253253646211972, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 272253253646211973, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 272253254279104211, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 272253254279104211, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 404377927933688280, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
       propertyPath: m_Name
       value: Enemy Patrol Path Variant
@@ -29,11 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 404377927933688284, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -8.392212
       objectReference: {fileID: 0}
     - target: {fileID: 404377927933688284, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.08563101
       objectReference: {fileID: 0}
     - target: {fileID: 404377927933688284, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
       propertyPath: m_LocalPosition.z
@@ -69,19 +93,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 404377927933688285, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
       propertyPath: m_Size.x
-      value: 0.31828922
+      value: 0.33015645
       objectReference: {fileID: 0}
     - target: {fileID: 404377927933688285, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
       propertyPath: m_Size.y
-      value: 0.29433155
+      value: 0.27059698
       objectReference: {fileID: 0}
     - target: {fileID: 404377927933688285, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
       propertyPath: m_Offset.x
-      value: 0.39657673
+      value: 0.004957944
       objectReference: {fileID: 0}
     - target: {fileID: 404377927933688285, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
       propertyPath: m_Offset.y
-      value: 0.29261976
+      value: -0.021861967
+      objectReference: {fileID: 0}
+    - target: {fileID: 404377927933688285, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 404377927933688285, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -127,6 +155,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 404377927933688287, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4721892230929900439, guid: f2f4a37b9d4313fe78cc5db327a7aeca, type: 3}
       propertyPath: m_Controller
       value: 
@@ -161,3 +193,20 @@ MonoBehaviour:
   - {fileID: 0}
   _speed: 5
   _waitTime: 3
+--- !u!114 &9172826435985552596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5219768416721251350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae0623cad85c4460ab529afaec2bf27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 0}
+  _low: {r: 0, g: 0, b: 0, a: 0}
+  _high: {r: 0, g: 0, b: 0, a: 0}
+  _offset: {x: 0, y: 0, z: 0}
+  cam: {fileID: 0}

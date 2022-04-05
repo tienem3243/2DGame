@@ -367,6 +367,7 @@ MonoBehaviour:
   _atk: 0
   _anim: {fileID: 8798179665164624787}
   player: {fileID: 2027950187}
+  hitEffect: {fileID: 1041462709008884362, guid: 2afce42a24b9278439d16b4498ee60d3, type: 3}
 --- !u!114 &2027950187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,3 +388,5 @@ MonoBehaviour:
   _atk: 20
   _def: 0
   gui: {fileID: 0}
+  _isOpen: 0
+  _inventoryPlayerMenu: {fileID: 0}

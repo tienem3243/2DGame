@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AtkSys : MonoBehaviour
+public class MeleeAtkSys : MonoBehaviour
 {
     [SerializeField] [Header("Range of melee")]private float atkRage = .5f;
 
@@ -14,6 +14,9 @@ public class AtkSys : MonoBehaviour
     private float Bonusdame;
     public Animator _anim;
     public Player player;
+    public SoundManager soundManager;
+    private bool capable; //variable that tell you the combo aniamtion was start or not
+   [SerializeField] private GameObject hitEffect;
     private void Start()
     {
     }
@@ -37,16 +40,22 @@ public class AtkSys : MonoBehaviour
     {
         Collider2D[] col = Physics2D.OverlapCircleAll(atackPoint.transform.position, atkRage, enermyLayer);
         if (col != null)
+        {
             foreach (Collider2D enemy in col)
             {
                 Debug.Log("atack " + enemy.name + " " + dame);
                 enemy.GetComponent<Enemy>().takeDamage(dame);
+                Instantiate(hitEffect, atackPoint.transform.position, Quaternion.identity);
+               //I will make that change when again many enermy
+                soundManager.PlaySound("hit");
             }
+           
+        }
+            
     }
 
     public void Start_Combo()
     {
-       
         _atk = false;
         if (_combo < maxCombo)
         {
@@ -58,10 +67,10 @@ public class AtkSys : MonoBehaviour
             if (_combo == maxCombo)
             {
                 Melee(player.GetAtk()*2);
-            }        
-            _combo = 1;
+                _combo = 1;
+            }                  
         }
-        
+        soundManager.PlaySound("slash");
     }
     public void FinshCombo()
     {
@@ -72,12 +81,21 @@ public class AtkSys : MonoBehaviour
     {
         if (Input.GetButtonDown("MeleeAtack")&&!_atk)
         {
-            _atk = true;
             _anim.SetTrigger("combo" + _combo);
+            if (capable)
+            {
+                _atk = true;
+            }
             Debug.Log(_combo);
         }
     }
 
+
+
+    public void ComboIsEnable()
+    {
+        capable = true;
+    }
     //gizmos draw range of atk
 
     void OnDrawGizmosSelected()

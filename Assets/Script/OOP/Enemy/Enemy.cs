@@ -6,14 +6,19 @@ public class Enemy : LivingEntity
 {
     [SerializeField]
     protected HeathBarController _heathBar;
-
+    private bool isVisualHP;//variable that decide when hp is visible
     private void Start()
     {
         _heathBar.SetHealthBar(_hitPoint, _maxHitPoint);
     }
-
     public override void takeDamage(float damage)
     {
+        if (base._hitPoint < _maxHitPoint&& !isVisualHP)
+        {
+            isVisualHP = true;
+            Instantiate(_heathBar, transform);
+        }
+        Mathf.Clamp(base._hitPoint, 0, base._maxHitPoint);
         base._hitPoint -= damage;
         _heathBar.SetHealthBar(base._hitPoint, base._maxHitPoint);
 

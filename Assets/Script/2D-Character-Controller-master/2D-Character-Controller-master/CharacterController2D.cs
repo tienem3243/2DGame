@@ -22,7 +22,7 @@ public class CharacterController2D : MonoBehaviour
 
 
 	[SerializeField]
-	AtkSys atkSys;
+	MeleeAtkSys atkSys;
 
 	Collider2D _colDash, _colStand;
 

@@ -20,4 +20,5 @@ public class GUIPlayer : MonoBehaviour
         _slider.maxValue = maxHitPoint;
         _slider.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(_low, _high, _slider.normalizedValue);
     }
+   
 }

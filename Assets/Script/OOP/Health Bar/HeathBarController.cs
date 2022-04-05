@@ -10,7 +10,6 @@ public class HeathBarController : MonoBehaviour
     public Color _low;
     public Color _high;
     public Vector3 _offset;
-    public Camera cam;
 
     /// <summary>Set heal bar for display entity's Heath.</summary>
     /// <param name="health"> description </param>
@@ -20,7 +19,6 @@ public class HeathBarController : MonoBehaviour
         _slider.gameObject.SetActive(hitPoint < maxHitPoint);
         _slider.value = hitPoint;
         _slider.maxValue = maxHitPoint;
-
         _slider.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(_low, _high, _slider.normalizedValue);
     }
 

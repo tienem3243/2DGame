@@ -42,8 +42,11 @@ public class LaserTrap : MonoBehaviour
     }
     void DealDame(float dame,RaycastHit2D hit)
     {
-        if (hit.collider.CompareTag("Player")){
-            hit.collider.GetComponent<Player>().takeDamage(dame);
+        if (hit.collider.CompareTag("Player"))
+        {
+                hit.collider.GetComponent<Player>().takeDamage(dame);
+  
+            
         }
     }
 }

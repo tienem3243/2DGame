@@ -23,8 +23,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5530821121115466390}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.22, y: -9.44, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5530821121764441953}
@@ -176,6 +176,5 @@ MonoBehaviour:
   _laserFirePoint: {fileID: 5530821121115466391}
   defDistantRay: 100
   _lineRenderer: {fileID: 5530821121764441952}
-  whereHit:
-    serializedVersion: 2
-    m_Bits: 256
+  _fireDelay: 0.5
+  dame: 0.1
