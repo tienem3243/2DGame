@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 8763745097636767658}
   - component: {fileID: 6903265201741405672}
   - component: {fileID: 955305734}
+  - component: {fileID: 4707316680333293308}
   m_Layer: 0
-  m_Name: Item Scroll
+  m_Name: Item Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +122,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 279ff480381111b40b99a9cb298a5fd3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,7 +130,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &955305734
@@ -144,4 +145,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0be6029e78530251d8ca1c70670ab6b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemData: {fileID: 11400000, guid: dbc7f98e742fbcfa889de9686b90a7b1, type: 2}
+  _itemData: {fileID: 0}
+--- !u!58 &4707316680333293308
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500906172345118477}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.2687156}
+  serializedVersion: 2
+  m_Radius: 1.9971312

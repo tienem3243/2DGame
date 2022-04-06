@@ -39,7 +39,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
         if (eventData.clickCount == 2)
         {
-            ItemManager.instance.removeItem(1);
+            ItemManager._instance.removeItem(1);
         }
     }
 

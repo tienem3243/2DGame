@@ -403,10 +403,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6254380847f737e95a187ad49b19e71e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 11400000, guid: dbc7f98e742fbcfa889de9686b90a7b1, type: 2}
-  itemNumbers: 02000000
-  slots:
+  _items: []
+  _itemNumbers: 
+  _slots:
   - {fileID: 7023987296443515597}
   - {fileID: 7023987296230958150}
   - {fileID: 7023987295751037586}

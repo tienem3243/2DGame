@@ -5,29 +5,30 @@ using UnityEngine.UI;
 
 public class ItemManager : MonoBehaviour
 {
-    public List<Item> items = new List<Item>();
-    public List<int> itemNumbers = new List<int>();
-    public GameObject[] slots;
+    /// <summary>Item on Display </summary>
+    public List<Item> _items = new List<Item>();
+    public List<int> _itemNumbers = new List<int>();
+    public GameObject[] _slots;
 
-    public static ItemManager instance;
+    public static ItemManager _instance;
 
     private void Start()
     {
-        instance = this;
+        _instance = this;
         DisplayItem();
     }
 
     public void DisplayItem()
     {
-        for (int i = 0; i < items.Count; i++)
+        for (int i = 0; i < _items.Count; i++)
         {
-            slots[i].transform.GetChild(0).GetComponent<Image>().color = new Color(1, 1, 1, 1);
-            slots[i].transform.GetChild(0).GetComponent<Image>().sprite = items[i].itemSprite;
+            _slots[i].transform.GetChild(0).GetComponent<Image>().color = new Color(1, 1, 1, 1);
+            _slots[i].transform.GetChild(0).GetComponent<Image>().sprite = _items[i].itemSprite;
 
-            slots[i].transform.GetChild(1).GetComponent<Text>().color = new Color(1, 1, 1, 1);
-            slots[i].transform.GetChild(1).GetComponent<Text>().text = itemNumbers[i].ToString();
+            _slots[i].transform.GetChild(1).GetComponent<Text>().color = new Color(1, 1, 1, 1);
+            _slots[i].transform.GetChild(1).GetComponent<Text>().text = _itemNumbers[i].ToString();
 
-            slots[i].transform.GetChild(2).gameObject.SetActive(true);
+            _slots[i].transform.GetChild(2).gameObject.SetActive(true);
 
         }
     }
@@ -35,6 +36,26 @@ public class ItemManager : MonoBehaviour
     public void addItem(Item item)
     {
         Debug.Log("Add item to your inventory : " + item.itemName);
+        // Case 1: In time don't have in your inventory
+        if (!_items.Contains(item))
+        {
+            _items.Add(item);
+            _itemNumbers.Add(1);
+        }
+        // Case 2: Its already here 
+        else
+        {
+            for (int i = 0; i < _items.Count; i++)
+            {
+                if (_items[i].itemID == item.itemID)
+                {
+                    _itemNumbers[i]++;
+                }
+            }
+        }
+
+        // re display items
+        DisplayItem();
     }
 
     public void removeItem(int pos)

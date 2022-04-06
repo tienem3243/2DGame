@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64231290c6fa8b32ea5ae2d049cc866f, type: 3}
-  m_Name: Item 2
+  m_Name: Item SSS 1
   m_EditorClassIdentifier: 
-  itemID: 2
-  itemName: Apple
-  itemDes: tao vang
-  itemSprite: {fileID: 21300000, guid: da7129ed6a246f048a49d8d97de2d2d4, type: 3}
-  itemPrice: 300
+  itemID: 999
+  itemName: Master Staff
+  itemDes: Powerfull staff for great mage
+  itemSprite: {fileID: 21300000, guid: a30e9a59a4ffb884489afda27a4945c3, type: 3}
+  itemPrice: 9999999

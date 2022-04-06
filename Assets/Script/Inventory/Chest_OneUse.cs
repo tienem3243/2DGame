@@ -10,7 +10,8 @@ public class Chest_OneUse : MonoBehaviour
     private bool _isOpen;
 
     public Animator anim;
-    public Item[] _prefab;
+    // public GameObject[] _prefab;
+    public DropRandomItem dropRandomItem;
 
 
     private void Start()
@@ -29,18 +30,22 @@ public class Chest_OneUse : MonoBehaviour
                 // change value before display
                 _isOpen = true;
                 anim.SetBool("IsOpen", true);
-                dropRandomItem();
+                // dropRandomItem();
+                // DropRandomItem._instance.dropRandomItem();
+                dropRandomItem.dropRandomItem();
             }
         }
     }
 
-    public void dropRandomItem()
-    {
-        int pos = Random.Range(0, _prefab.Length);
-        Debug.Log("Drop item at pos " + pos + " has lenght : " + _prefab.Length);
+    /*
+        public void dropRandomItem()
+        {
+            int pos = Random.Range(0, _prefab.Length);
+            Debug.Log("Drop item at pos " + pos + " has lenght : " + _prefab.Length);
 
-        Instantiate(_prefab[pos], gameObject.transform.position, Quaternion.identity);
-    }
+            Instantiate(_prefab[pos], gameObject.transform.position, Quaternion.identity);
+        }
+        */
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")

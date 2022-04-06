@@ -7,6 +7,9 @@ public class Enemy : LivingEntity
     [SerializeField]
     protected HeathBarController _heathBar;
     private bool isVisualHP;//variable that decide when hp is visible
+
+    public DropRandomItem dropRandomItem;
+
     private void Start()
     {
         Instantiate(_heathBar, transform);
@@ -16,11 +19,11 @@ public class Enemy : LivingEntity
     }
     public override void takeDamage(float damage)
     {
-        if (base._hitPoint < _maxHitPoint&& !isVisualHP)
+        if (base._hitPoint < _maxHitPoint && !isVisualHP)
         {
             _heathBar.setCanvasGroupAlpha(1);
             isVisualHP = true;
-           
+
         }
         Mathf.Clamp(base._hitPoint, 0, base._maxHitPoint);
         base._hitPoint -= damage;
@@ -29,6 +32,8 @@ public class Enemy : LivingEntity
         if (base._hitPoint <= 0)
         {
             // Do something for player die
+            // DropRandomItem._instance.dropRandomItem();
+            dropRandomItem.dropRandomItem();
             EntityDestroy();
         }
     }

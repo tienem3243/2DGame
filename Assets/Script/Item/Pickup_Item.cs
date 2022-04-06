@@ -17,7 +17,7 @@ public class Pickup_Item : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("Player get : " + _itemData.itemName);
-            ItemManager.instance.addItem(_itemData);
+            ItemManager._instance.addItem(_itemData);
 
             Destroy(gameObject);
         }
