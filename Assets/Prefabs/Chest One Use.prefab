@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4381622100066046095}
   - component: {fileID: 4381622100066046088}
   - component: {fileID: 4381622100066046089}
+  - component: {fileID: 1609579505}
   m_Layer: 0
   m_Name: Chest One Use
   m_TagString: Untagged
@@ -145,7 +146,21 @@ MonoBehaviour:
   _isEnable: 0
   _isOpen: 0
   anim: {fileID: 4381622100066046088}
+  dropRandomItem: {fileID: 1609579505}
+--- !u!114 &1609579505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4381622100066046091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd09f4e41413040a2ab10d1f3cc5c99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _prefab:
+  - {fileID: 3842268151733955119, guid: 26a96df9e0f60825f8e79efc0f81c191, type: 3}
   - {fileID: 4080230016894626640, guid: fecd191982533714db95ee96e08ea6a2, type: 3}
   - {fileID: 3022828095779898564, guid: d93f989838ea74beaa3e0e9d88ed8416, type: 3}
-  - {fileID: 3842268151733955119, guid: 26a96df9e0f60825f8e79efc0f81c191, type: 3}
+  _prefabCount: 

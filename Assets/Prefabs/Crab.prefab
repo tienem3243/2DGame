@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8228795886584765990}
   - component: {fileID: 8228795886584765989}
   - component: {fileID: 8228795886584765988}
+  - component: {fileID: 1062597304}
   m_Layer: 6
   m_Name: Crab
   m_TagString: Untagged
@@ -49,11 +50,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterName: Crab
-  _maxHitPoint: 100
-  _hitPoint: 100
+  _maxHitPoint: 10
+  _hitPoint: 10
   _deathEffect: {fileID: 6923962339590636289, guid: 4b15973d723c89032b2019bfe74cadee, type: 3}
   _deathSound: {fileID: 8300000, guid: 61ab07a3d2b5a953eb44eab76452079d, type: 3}
   _heathBar: {fileID: 458135095966298544, guid: 2d2ee5fcc6384c145a7ef69988e61f61, type: 3}
+  dropRandomItem: {fileID: 1062597304}
 --- !u!114 &8228795886584765984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,7 +73,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   _speed: 5
-  _waitTime: 1
+  _waitTime: 3
 --- !u!95 &8228795886584765991
 Animator:
   serializedVersion: 3
@@ -179,3 +181,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1062597304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228795886584765979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd09f4e41413040a2ab10d1f3cc5c99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefab:
+  - {fileID: 9076294531415268887, guid: 08adf0d00d37ce763bdb10ef83a47e29, type: 3}
+  _prefabCount: 

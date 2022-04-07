@@ -50,6 +50,8 @@ public class ItemManager : MonoBehaviour
                 if (_items[i].itemID == item.itemID)
                 {
                     _itemNumbers[i]++;
+                    // quit the loop 
+                    break;
                 }
             }
         }
