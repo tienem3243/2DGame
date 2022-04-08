@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39c6a8152c2cd7f3881d8ac2f2ce8752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 0}
+  _animator: {fileID: 8228795886584765991}
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -194,5 +194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefab:
-  - {fileID: 9076294531415268887, guid: 08adf0d00d37ce763bdb10ef83a47e29, type: 3}
-  _prefabCount: 
+  - {fileID: 4080230016894626640, guid: fecd191982533714db95ee96e08ea6a2, type: 3}
+  - {fileID: 3022828095779898564, guid: d93f989838ea74beaa3e0e9d88ed8416, type: 3}
+  _prefabChance: 5000000014000000

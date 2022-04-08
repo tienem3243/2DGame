@@ -385,7 +385,7 @@ MonoBehaviour:
   _maxHitPoint: 100
   _hitPoint: 100
   _deathEffect: {fileID: 0}
-  _deathSound: {fileID: 0}
+  _deathSound: {fileID: 8300000, guid: 61ab07a3d2b5a953eb44eab76452079d, type: 3}
   _atk: 1
   _def: 0
   gui: {fileID: 0}
