@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5530821121764441953}
   - component: {fileID: 5530821121764441952}
-  - component: {fileID: 5530821121764441967}
+  - component: {fileID: 8371295750322399718}
   m_Layer: 2
   m_Name: Laser
   m_TagString: Untagged
@@ -161,7 +161,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &5530821121764441967
+--- !u!114 &8371295750322399718
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,11 +170,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5530821121764441966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51f834136da59f1489c3680f4a3e6847, type: 3}
+  m_Script: {fileID: 11500000, guid: bb75d3c8bffa4934ca21e68a8d0aae7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _laserFirePoint: {fileID: 5530821121115466391}
   defDistantRay: 100
   _lineRenderer: {fileID: 5530821121764441952}
-  _fireDelay: 0.5
-  dame: 0.1
+  _fireDelay: 0
+  dame: 0
