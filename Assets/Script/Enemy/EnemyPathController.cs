@@ -25,7 +25,6 @@ public class EnemyPathController : MonoBehaviour
             Debug.DrawLine(waypoints[i].position,waypoints[i+1].position,Color.green);
         }
     }
-  
     private void Update()
     {
         

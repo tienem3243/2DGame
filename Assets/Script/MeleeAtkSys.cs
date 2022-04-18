@@ -19,7 +19,7 @@ public class MeleeAtkSys : MonoBehaviour
     private void Start()
     {
     }
-    private void LateUpdate()
+    private void Update()
     {
         if (Input.GetButtonDown("MeleeAtack"))
         {
@@ -29,7 +29,7 @@ public class MeleeAtkSys : MonoBehaviour
         {
            if(Input.anyKey&& !Input.GetButton("MeleeAtack")){
                 _atk = false;
-                _combo = 1;   
+                _combo = 0;   
             }
                 
         }
@@ -66,7 +66,7 @@ public class MeleeAtkSys : MonoBehaviour
             if (_combo == maxCombo)
             {
                 Melee(player.GetAtk()*2);
-                _combo = 1;
+                _combo = 0;
             }                  
         }
         soundManager.PlaySound("slash");
@@ -74,16 +74,20 @@ public class MeleeAtkSys : MonoBehaviour
     public void FinshCombo()
     {
         _atk = false;
-        _combo = 1;
+        _combo = 0;
     }
     public void Combo()
     {
-        if (Input.GetButtonDown("MeleeAtack")&&!_atk)
+        if (Input.GetButtonDown("MeleeAtack") && !_atk)
         {
-            _anim.SetTrigger("combo" + _combo);
-      
+            //avoid combo zero
+            if (_combo == 0)
+            {
+                _combo++;
+            }
+                _anim.SetTrigger("combo" + _combo);
+
                 _atk = true;
-       
     
             Debug.Log(_combo);
         }

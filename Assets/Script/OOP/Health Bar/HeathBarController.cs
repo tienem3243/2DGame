@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,7 +20,6 @@ public class HeathBarController : MonoBehaviour
         _slider.maxValue = maxHitPoint;
         _slider.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(_low, _high, _slider.normalizedValue);
     }
-
     private void Update()
     {
         // make HeathBar/Slider move with parant position

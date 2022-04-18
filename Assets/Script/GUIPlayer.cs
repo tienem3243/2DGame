@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,15 +8,18 @@ public class GUIPlayer : MonoBehaviour
     public Color _low;
     public Color _high;
     public Vector3 _offset;
-    public Camera cam;
-
     /// <summary>Set heal bar for display player Heath.</summary>
     /// <param name="health"> description </param>
+    private void Start()
+    {
+        SetHealthBar(23, 100);
+    }
     public void SetHealthBar(float hitPoint, float maxHitPoint)
     { 
         _slider.value = hitPoint;
+        Debug.Log(_slider.value);
         _slider.maxValue = maxHitPoint;
-        _slider.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(_low, _high, _slider.normalizedValue);
+        
     }
-   
+  
 }
