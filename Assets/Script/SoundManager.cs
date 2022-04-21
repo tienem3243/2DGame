@@ -8,8 +8,9 @@ public class SoundManager : MonoBehaviour
     private AudioSource auSour;
     private void Start()
     {
-        auSour = GetComponent<AudioSource>();
         DontDestroyOnLoad(gameObject);
+        auSour = GetComponent<AudioSource>();
+       
     }
     /// <summary>
     /// combine

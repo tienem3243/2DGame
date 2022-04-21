@@ -103,7 +103,10 @@ MonoBehaviour:
   _characterName: Chicken
   _maxHitPoint: 10
   _hitPoint: 10
+  _deathEffect: {fileID: 0}
+  _deathSound: {fileID: 0}
   _heathBar: {fileID: 8295733770505656163}
+  dropRandomItem: {fileID: 0}
 --- !u!50 &8295733770441011733
 Rigidbody2D:
   serializedVersion: 4

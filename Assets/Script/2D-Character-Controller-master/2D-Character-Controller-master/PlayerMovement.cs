@@ -29,10 +29,15 @@ public class PlayerMovement : MonoBehaviour {
 			dash = true;
 			animator.SetTrigger("IsDashing");
 		}
-		if (Input.GetButtonDown("Crounch"))
+		if (Input.GetButtonDown("Crouch"))
 		{
 			crouch = true;
-			animator.SetTrigger("IsCrouching");
+			Debug.Log(crouch);
+		}
+		else if (Input.GetButtonUp("Crouch"))
+		{
+			crouch = false;
+			Debug.Log(crouch);
 		}
 		if (Input.GetButtonDown("MeleeAtack"))
         {
@@ -50,16 +55,16 @@ public class PlayerMovement : MonoBehaviour {
 		animator.SetBool("IsJumping", true);
 		animator.SetBool("IsGround", false);
 	}
-
+	public void OnCrouching(bool isCrouching)
+	{
+	}
 
 	void FixedUpdate ()
 	{
 
         controller.Move(horizontalMove * Time.fixedDeltaTime, jump, dash, crouch, atk);
-		atk = false;
 		dash = false;
 		jump = false;
-		crouch = false;
-		
+		Debug.Log(crouch);
 	}
 }
