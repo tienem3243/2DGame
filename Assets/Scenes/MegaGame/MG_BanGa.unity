@@ -6722,7 +6722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 420770689970983868, guid: 5c029d1cf6eb63d2bbd0862767a41939, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c029d1cf6eb63d2bbd0862767a41939, type: 3}
@@ -6794,6 +6794,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1011344789}
     m_Modifications:
+    - target: {fileID: 8295733769856501235, guid: f738b4f0ccb4dd4919870bb35cd502fd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295733769856501235, guid: f738b4f0ccb4dd4919870bb35cd502fd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8295733770441011730, guid: f738b4f0ccb4dd4919870bb35cd502fd, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
@@ -6805,6 +6813,10 @@ PrefabInstance:
     - target: {fileID: 8295733770441011816, guid: f738b4f0ccb4dd4919870bb35cd502fd, type: 3}
       propertyPath: m_Name
       value: MG_Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8295733770441011816, guid: f738b4f0ccb4dd4919870bb35cd502fd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8295733770441011817, guid: f738b4f0ccb4dd4919870bb35cd502fd, type: 3}
       propertyPath: m_RootOrder

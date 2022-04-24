@@ -13,16 +13,15 @@ public class ArcadeTrigger : MonoBehaviour
     }
     private void Update()
     {
-        if (isPlaying&& Input.GetButtonDown("Submit"))
-        {
-            SceneManager.LoadScene(nameGame);
-        }
+       
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player")&&Input.GetKey(KeyCode.X))
         {
             isPlaying = !isPlaying;
+            collision.gameObject.SetActive(false);
+            SceneManager.LoadScene(nameGame);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
