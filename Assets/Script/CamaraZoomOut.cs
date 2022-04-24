@@ -13,7 +13,10 @@ public class CamaraZoomOut : MonoBehaviour
 
     public bool _isStart = false;
     // public bool _isInRange = false;
-
+    private void Start()
+    {
+        _cam = FindObjectOfType<CinemachineVirtualCamera>();
+    }
     private void Update()
     {
         if (_isStart)
