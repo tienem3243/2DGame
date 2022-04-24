@@ -553,6 +553,7 @@ GameObject:
   - component: {fileID: 227731754}
   - component: {fileID: 227731756}
   - component: {fileID: 227731755}
+  - component: {fileID: 227731757}
   m_Layer: 0
   m_Name: Boundary
   m_TagString: Untagged
@@ -628,6 +629,19 @@ PolygonCollider2D:
       - {x: 7.5072494, y: -3.1155052}
       - {x: 57.144592, y: -2.59974}
       - {x: 208.35352, y: -9.004335}
+--- !u!114 &227731757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227731753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f471eac2583084da95b0db9f630822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  col: {fileID: 227731756}
 --- !u!1001 &318612974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24960,7 +24974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f471eac2583084da95b0db9f630822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider2D: {fileID: 227731756}
+  col: {fileID: 0}
 --- !u!1 &1106160196
 GameObject:
   m_ObjectHideFlags: 0

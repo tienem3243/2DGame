@@ -13822,7 +13822,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 456448418}
-  isPaused: 0
 --- !u!4 &1141348062
 Transform:
   m_ObjectHideFlags: 0
@@ -44509,7 +44508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f471eac2583084da95b0db9f630822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider2D: {fileID: 1169332977}
+  col: {fileID: 1169332977}
 --- !u!4 &2026635651
 Transform:
   m_ObjectHideFlags: 0
