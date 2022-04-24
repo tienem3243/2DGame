@@ -17,4 +17,9 @@ public class NextLV : MonoBehaviour
        trans.LoadScene();
         collision.GetComponent<CharacterController2D>().MoveToPosition(NextPortalPos);
     }
+    public void NextLvButton()
+    {
+        Collider2D col = FindObjectOfType<CharacterController2D>().GetComponent<Collider2D>();
+        StartCoroutine(TeleportPos(col));
+    }
 }

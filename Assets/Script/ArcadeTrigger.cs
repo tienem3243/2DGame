@@ -20,7 +20,7 @@ public class ArcadeTrigger : MonoBehaviour
         if (collision.CompareTag("Player")&&Input.GetKey(KeyCode.X))
         {
             isPlaying = !isPlaying;
-            collision.gameObject.SetActive(false);
+           
             SceneManager.LoadScene(nameGame);
         }
     }

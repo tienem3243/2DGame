@@ -15,6 +15,7 @@ public class HiddenRoom : MonoBehaviour
     [ContextMenu("Visibal Hidden Room")]
     public void SetVisible(){
         {
+            hiddenLight.SetActive(true);
             if (a > 0)
             {
                 a -=   Time.deltaTime;
