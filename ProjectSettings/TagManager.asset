@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Activator
   - Portal
+  - Platform
   layers:
   - Default
   - TransparentFX

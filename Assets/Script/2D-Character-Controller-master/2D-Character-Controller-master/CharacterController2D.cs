@@ -76,6 +76,10 @@ public class CharacterController2D : MonoBehaviour
 				}
 
 			}
+            if (colliders[i].CompareTag("Platform")){
+				m_CrouchDisableCollider = colliders[i];
+            }
+          
 		}
 	}
 
@@ -94,7 +98,7 @@ public class CharacterController2D : MonoBehaviour
 					m_wasCrouching = true;
 					//OnCrouchEvent.Invoke(true);
 				}
-
+				
 
 				// Disable one of the colliders when crouching
 				if (m_CrouchDisableCollider != null)
@@ -177,6 +181,11 @@ public class CharacterController2D : MonoBehaviour
 
 		}
 	}
+
+	public void MoveToPosition(Vector2 pos)
+    {
+		m_Rigidbody2D.MovePosition(pos);
+    }
 	IEnumerator WaitforDashEnd()
 	{
 			yield return new WaitForSeconds(.1f);

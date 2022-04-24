@@ -14,7 +14,22 @@ public abstract class LivingEntity : MonoBehaviour
     protected float _maxHitPoint;
     [SerializeField]
     protected float _hitPoint;
-
+    public void setMaxhitPoint(float mHitpoint)
+    {
+        this._maxHitPoint = mHitpoint;
+    }
+    public float getMaxhitpoint()
+    {
+        return this._maxHitPoint;
+    }
+    public void sethitPoint(float hitPoint)
+    {
+        this._hitPoint = hitPoint;
+    }
+    public float gethitpoint()
+    {
+        return this._hitPoint;
+    }
     public static LivingEntity _instance;
     // public bool _isMoveAble;
     public GameObject _deathEffect;

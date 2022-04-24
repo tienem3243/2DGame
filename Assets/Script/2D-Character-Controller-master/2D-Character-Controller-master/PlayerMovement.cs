@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
 	public CharacterController2D controller;
+	public Vector2 StartPos;//where you stand when scene change
 	public Animator animator;
 	public float runSpeed = 40f;
 	float horizontalMove = 0f;
@@ -12,8 +14,16 @@ public class PlayerMovement : MonoBehaviour {
 	bool dash = false;
 	bool crouch = false;
 	bool atk = false;
-	// Update is called once per frame
-	void Update () {
+
+    private void OnDrawGizmosSelected()
+    {
+		Gizmos.DrawCube(StartPos,new Vector2(1, 1));
+    }
+	
+	
+
+    // Update is called once per frame
+    void Update () {
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
@@ -65,6 +75,5 @@ public class PlayerMovement : MonoBehaviour {
         controller.Move(horizontalMove * Time.fixedDeltaTime, jump, dash, crouch, atk);
 		dash = false;
 		jump = false;
-		Debug.Log(crouch);
 	}
 }

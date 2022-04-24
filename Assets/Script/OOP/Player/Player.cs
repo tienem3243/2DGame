@@ -12,6 +12,23 @@ public class Player : LivingEntity
     public bool _isOpen;
     public GameObject _inventoryPlayerMenu;
 
+    public void setAtk(float atk)
+    {
+        this._atk = atk;
+    }
+    public float getAtk()
+    {
+        return this._atk;
+    }
+    public void setDef(float def)
+    {
+        this._def = def;
+    }
+    public float getDef()
+    {
+        return this._def;
+    }
+
     private void Start()
     {
         _isOpen = false;
