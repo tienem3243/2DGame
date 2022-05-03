@@ -15,7 +15,6 @@ public class MG_BanGa_Bullet : MonoBehaviour
     private void Start()
     {
         _rb2D.velocity = transform.up * _speedBullet;
-        // _rb2D.velocity = transform.right * _speedBullet;
 
     }
 

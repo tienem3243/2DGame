@@ -19,6 +19,7 @@ public class Enemy : LivingEntity
     }
     public override void takeDamage(float damage)
     {
+        _hitPoint = Mathf.Clamp(_hitPoint, 0, _maxHitPoint);
         if (base._hitPoint < _maxHitPoint && !isVisualHP)
         {
             _heathBar.setCanvasGroupAlpha(1);
