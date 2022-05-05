@@ -14,6 +14,7 @@ public abstract class LivingEntity : MonoBehaviour
     protected float _maxHitPoint;
     [SerializeField]
     protected float _hitPoint;
+    [SerializeField] protected float _dame;
     public void setMaxhitPoint(float mHitpoint)
     {
         this._maxHitPoint = mHitpoint;

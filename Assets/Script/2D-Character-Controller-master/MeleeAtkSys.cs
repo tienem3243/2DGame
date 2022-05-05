@@ -16,9 +16,7 @@ public class MeleeAtkSys : MonoBehaviour
     public Player player;
     public SoundManager soundManager;
    [SerializeField] private GameObject hitEffect;
-    private void Start()
-    {
-    }
+ 
     private void Update()
     {
         if (Input.GetButtonDown("MeleeAtack"))

@@ -189,6 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _slider: {fileID: 7312723270804332063}
+  sliderDot: {fileID: 7312723270804332063}
   _low: {r: 0.7924528, g: 0.14503376, b: 0.14503376, a: 0}
   _high: {r: 0.30629644, g: 0.90588236, b: 0.10588234, a: 0}
   _offset: {x: 0, y: 0, z: 0}

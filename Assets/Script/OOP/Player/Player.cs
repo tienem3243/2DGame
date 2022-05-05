@@ -62,6 +62,6 @@ public class Player : LivingEntity
 
     public override void EntityDestroy()
     {
-        throw new System.NotImplementedException();
+        Debug.Log("gameOVer");
     }
 }
