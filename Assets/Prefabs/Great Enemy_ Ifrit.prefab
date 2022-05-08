@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253412884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49, y: 0.16, z: 0}
+  m_LocalPosition: {x: 0.05, y: 0.2, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 5598011723024796069}
@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 90
+  target: {fileID: 0}
+  owner: {fileID: 0}
 --- !u!1 &523080520
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523080520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.495, y: -0.452, z: 13.064924}
+  m_LocalPosition: {x: -0.352, y: -0.488, z: 13.064924}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 5598011724460898712}
@@ -152,8 +154,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2216988732087810347}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.44, y: -0.31, z: 31.43095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.385, y: -0.291, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 253412885}
@@ -182,8 +184,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5117048661651053266}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 0.48, z: 31.43095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.357, y: -0.335, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 253412885}
@@ -212,8 +214,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5598011723024796070}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -0.27, z: 31.43095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.022, y: 0.484, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 253412885}
@@ -274,7 +276,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 32
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -331,12 +333,12 @@ MonoBehaviour:
   dropRandomItem: {fileID: 0}
   m_rig: {fileID: 5598011724460898718}
   m_col: {fileID: 5598011724460898719}
-  speed: 30
+  speed: 5
   m_anim: {fileID: 5598011724460898717}
   fireOrb: {fileID: 7754108118120026980, guid: 2285613da5ac65b41a362563d41177a5, type: 3}
   CircleRolex: {fileID: 253412885}
   Melee: {fileID: 523080521}
-  radius: 2
+  radius: 1.24
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -345,8 +347,14 @@ MonoBehaviour:
   - {fileID: 8246953447198779585}
   - {fileID: 8616954622897063697}
   bossHealbarPos: {fileID: 0}
-  timeRest: 4
+  timeRest: 1.5
   test: {fileID: 0}
+  rageMode: 0
+  _FacingRight: 0
+  RangeSkill:
+  - flameorb
+  MeleeSkill:
+  - cleaver
 --- !u!50 &5598011724460898718
 Rigidbody2D:
   serializedVersion: 4
@@ -359,10 +367,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2000
+  m_Mass: 3000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: 60799c02b68e1d84a8c3e4b4dedb2d0c, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -381,7 +389,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.034556933, y: -0.4434785}
+  m_Offset: {x: 0.034556925, y: -0.4391657}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -392,7 +400,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3779782, y: 0.7120268}
+  m_Size: {x: 0.3779782, y: 0.69776034}
   m_EdgeRadius: 0
 --- !u!95 &5598011724460898717
 Animator:
@@ -443,6 +451,6 @@ MonoBehaviour:
   layerPlayer:
     serializedVersion: 2
     m_Bits: 256
-  radius: 13.35
+  radius: 17.22
   controller: {fileID: 5598011724460898714}
-  _timeDelay: 0.5
+  action: 0

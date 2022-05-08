@@ -120,6 +120,7 @@ MonoBehaviour:
   _dame: 10
   _speed: 18.38
   target: {fileID: 0}
+  waitTime: 0.5
   active: 0
 --- !u!50 &1401068486964666518
 Rigidbody2D:

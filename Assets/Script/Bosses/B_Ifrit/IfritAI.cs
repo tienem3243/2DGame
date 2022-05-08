@@ -14,6 +14,7 @@ public class IfritAI : MonoBehaviour
     public IfritController controller;
     [SerializeField]
     private bool action;
+    
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, radius);
@@ -22,17 +23,24 @@ public class IfritAI : MonoBehaviour
 
     private void Start()
     {
-     
+        
         StartCoroutine(_Update(controller.timeRest));
     }
     private void Update()
-    { 
+    {
+     
+     
         //move control
         distance = Vector2.Distance(transform.position, target.transform.position);
         if (distance > 6 && !action && !controller.m_anim.GetCurrentAnimatorStateInfo(0).IsName("Ifrit_Cleaver"))
         {
-            controller.m_anim.SetBool("isWalk", true);
-            controller.Movement(new Vector3(target.position.x, target.position.y + 3));
+            if(transform.position.x-target.position.x>0&&transform.rotation.y>=0||
+                transform.position.x - target.position.x < 0 && transform.rotation.y < 0)//facing on right way
+            {
+                controller.m_anim.SetBool("isWalk", true);
+                controller.Movement(new Vector3(target.position.x, target.position.y));
+            }
+              
         }
         else
         {
@@ -45,25 +53,47 @@ public class IfritAI : MonoBehaviour
        
         while (true)
         {
-            float random = Random.Range(0f, (float)controller.Skillist.Length-0.01f);// i make this to sure enemy hard to lead
+            // i make this to sure enemy hard to lead
             action = !action;
             DetectTarget();
-
-            if (target != null)
+            if (controller.rageMode &&controller.rageSkillCount>0)
             {
-              
-                if (distance <= 6f)
+                
+                StartCoroutine(controller.RageATK(target));
+                
+            }
+            if (target != null&& !controller.m_anim.GetCurrentAnimatorStateInfo(0).IsName("Ifrit_Cleaver"))
+            {
+                //flip controller
+                if (target.position.x - transform.position.x > 0&&!controller._FacingRight)
                 {
-                    if(random<(controller.Skillist.Length)/2) //half of array  
-                    random += 0.4f;//increasing melee rate, this is my secret because melee atk type is alway plant on the right field of array, i know that hard to understand but it fun and fast
-                    controller.Atk(controller.Skillist[(int)random], target);
+                    controller.Flip();
+                }
+                if (target.position.x - transform.position.x < 0 && controller._FacingRight)
+                {   
+                    controller.Flip();
+                }
+                if (distance <= 6)
+                {
+                    int random =Random.Range(0,controller.MeleeSkill.Length - 1+1);// +1 is mean 1 outrange to have a change perfome range Skill
+                   // string[] merg = controller.MeleeSkill + controller.RangeSkill;
+                    Debug.Log(random);
+                    if (random > controller.MeleeSkill.Length - 1)//change to perform range skill in melee range
+                    {
+                        int randomz = Random.Range(0, controller.RangeSkill.Length - 1);
+                        controller.Atk(controller.RangeSkill[randomz], target);
+                    }
+                    
+                    controller.Atk(controller.MeleeSkill[(int)random], target);
             
                 }
                 if (distance > 6f && !action)
                 {
-                    controller.Atk("flameorb", target);
-
+                    int random = Random.Range(0, controller.RangeSkill.Length - 1);
+                
+                    controller.Atk(controller.RangeSkill[random], target);
                 }
+                
 
             }
           

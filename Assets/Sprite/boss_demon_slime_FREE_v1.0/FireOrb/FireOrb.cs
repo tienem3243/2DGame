@@ -15,10 +15,12 @@ public class FireOrb : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AimShoot();
+        transform.SetParent(null);
         _col = GetComponent<Collider2D>();
         _rig = GetComponent<Rigidbody2D>();
         StartCoroutine(WaitShoot(waitTime));
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 4f);
     }
 
     // Update is called once per frame
@@ -28,7 +30,7 @@ public class FireOrb : MonoBehaviour
         if (!active)
         {
             _col.enabled = false;
-            AimShoot();
+           
         }
         if (active)
         {

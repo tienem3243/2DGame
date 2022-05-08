@@ -23,14 +23,22 @@ public class IfritController : Boss
     private Vector3 m_Velocity = Vector3.zero;
     private Vector2 onTimePos;
     public Transform test;
-    private bool rageMode;
-    public string[] Skillist = { "flameorb","cleaver" }; //right field for melee left for range, if you want to add more atk just add to bottom or top of array
+
+    [SerializeField] public int _rageSkillCount;
+    [SerializeField]public int rageSkillCount;
+    public bool _FacingRight;
+    public string[] RangeSkill= { "flameorb" };
+    public string[] MeleeSkill= { "cleaver" };
+    public bool rageMode;
+    public bool onRageAtk;
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(Melee.position,radius);
     }
     private void Start()
     {
+        rageSkillCount = _rageSkillCount;
+
         m_anim = GetComponent<Animator>();
           Instantiate(_heathBar, transform);
         _heathBar = GetComponentInChildren<HeathBarController>();
@@ -57,7 +65,11 @@ public class IfritController : Boss
 
     }
        
-
+    public void Flip()
+    {
+        _FacingRight = !_FacingRight;
+        transform.Rotate(new Vector2(0, 180));
+    }
     [ContextMenu("Cleaver")]
     public void Cleaver()
     {
@@ -80,6 +92,7 @@ public class IfritController : Boss
    /// <summary>
    /// -flameorb: summon fire orb swing on the orbit
    /// -cleaver: simple melee
+   /// -meteor: string of flameorb
    /// </summary>
    /// <param name="name"></param>
    /// <param name="Itarget"></param>
@@ -96,11 +109,17 @@ public class IfritController : Boss
                 break;
             case "skyrider": //fall off from the sky to target 
                 break;
-            case "meteor"://shooting the string of massive fireorb after flying to sky, decree restTime to nearly zero then weakness when fall off ground 
+            case "meteor":
+                StartCoroutine(MeteorPerform(5f));
                 break;
         }
     }
 
+    [ContextMenu("test")]
+    public void testMeteor()
+    {
+        StartCoroutine(MeteorPerform(5f));
+    }
     public void FlameOrbSummon(Transform Itarget)
     {
         for (int i = 0; i < firePoint.Length; i++)
@@ -112,8 +131,36 @@ public class IfritController : Boss
             flameOrb.GetComponent<FireOrb>().target =Itarget;//need find target
         }
     }
-
+    
+    public IEnumerator MeteorPerform(float duration)
+    { //TODO get actactly time
+        onRageAtk = true;
+        StartCoroutine(Teleport(transform.position + new Vector3(0, 19, 0)));
+        timeRest = 0.09f;   
+        yield return new WaitForSeconds(duration);
+        m_rig.gravityScale = 3;
+        timeRest = 2;//need handle
+        onRageAtk = false;
+        Debug.Log(m_rig.gravityScale);
+    }
+    public IEnumerator Teleport(Vector3 position)
+    {
+        m_anim.SetBool("isDisapear", true);
+        yield return new WaitForSeconds(1.2f);
+        m_anim.SetBool("isDisapear", false);
+        m_rig.gravityScale = 0;
+        m_rig.MovePosition(position);
+    }
  
+    public IEnumerator RageATK(Transform target)
+    {
+        rageSkillCount--;
+        m_anim.SetTrigger("ForceIdle");
+        Atk("meteor", target);
+        yield return new WaitForSeconds(5f);
+        
+    }
+
     public void RageMode()
     {
         
