@@ -13,6 +13,7 @@ public class TeleportDoor : MonoBehaviour
         {
             if (collision.CompareTag("Player"))
             {
+                collision.GetComponentInChildren<UnitData>().Save();
                 StartCoroutine(TeleportPos(collision));
             }
           

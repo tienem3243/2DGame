@@ -9,16 +9,18 @@ public class TriggerVisible : MonoBehaviour
     {
         color = gameObject.GetComponent<Renderer>().material.color;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerEnter2D(Collider2D collision)
     {
-        color.a=1;
+        color.a = 1;
         this.GetComponent<SpriteRenderer>().color = color;
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        color.a=0;
+        color.a = 0;
         this.GetComponent<SpriteRenderer>().color = color;
-      
+
     }
+   
+ 
 }
 
