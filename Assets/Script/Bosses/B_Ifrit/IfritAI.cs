@@ -31,6 +31,7 @@ public class IfritAI : MonoBehaviour
      
      
         //move control
+        if(target!=null)
         distance = Vector2.Distance(transform.position, target.transform.position);
         if (distance > 6 && !action && !controller.m_anim.GetCurrentAnimatorStateInfo(0).IsName("Ifrit_Cleaver"))
         {
@@ -56,12 +57,12 @@ public class IfritAI : MonoBehaviour
             // i make this to sure enemy hard to lead
             action = !action;
             DetectTarget();
-            if (controller.rageMode &&controller.rageSkillCount>0)
+            if (controller.rageMode && controller.rageSkillCount > 0 && controller.m_anim.GetCurrentAnimatorStateInfo(0).IsName("Ifrit_Idle")) 
             {
                 
                 StartCoroutine(controller.RageATK(target));
                 
-            }
+            }else
             if (target != null&& !controller.m_anim.GetCurrentAnimatorStateInfo(0).IsName("Ifrit_Cleaver"))
             {
                 //flip controller
@@ -75,7 +76,7 @@ public class IfritAI : MonoBehaviour
                 }
                 if (distance <= 6)
                 {
-                    int random =Random.Range(0,controller.MeleeSkill.Length - 1+1);// +1 is mean 1 outrange to have a change perfome range Skill
+                    int random =Random.Range(0,controller.MeleeSkill.Length+1 );// +1 is mean 1 outrange to have a change perfome range Skill
                    // string[] merg = controller.MeleeSkill + controller.RangeSkill;
                     Debug.Log(random);
                     if (random > controller.MeleeSkill.Length - 1)//change to perform range skill in melee range
@@ -83,7 +84,7 @@ public class IfritAI : MonoBehaviour
                         int randomz = Random.Range(0, controller.RangeSkill.Length - 1);
                         controller.Atk(controller.RangeSkill[randomz], target);
                     }
-                    
+                    else
                     controller.Atk(controller.MeleeSkill[(int)random], target);
             
                 }

@@ -136,6 +136,7 @@ public class IfritController : Boss
     { //TODO get actactly time
         onRageAtk = true;
         StartCoroutine(Teleport(transform.position + new Vector3(0, 19, 0)));
+        yield return new WaitForSeconds(1.2f);
         timeRest = 0.09f;   
         yield return new WaitForSeconds(duration);
         m_rig.gravityScale = 3;
@@ -155,7 +156,6 @@ public class IfritController : Boss
     public IEnumerator RageATK(Transform target)
     {
         rageSkillCount--;
-        m_anim.SetTrigger("ForceIdle");
         Atk("meteor", target);
         yield return new WaitForSeconds(5f);
         

@@ -858,8 +858,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterName: RedHood Variant
-  _maxHitPoint: 100
-  _hitPoint: 100
+  _maxHitPoint: 300
+  _hitPoint: 300
   _dame: 50
   _deathEffect: {fileID: 0}
   _deathSound: {fileID: 8300000, guid: 61ab07a3d2b5a953eb44eab76452079d, type: 3}
