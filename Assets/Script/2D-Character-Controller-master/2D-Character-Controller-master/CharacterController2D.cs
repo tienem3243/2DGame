@@ -168,13 +168,13 @@ public class CharacterController2D : MonoBehaviour
 			{
 
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;
-				m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, Vector2.right * m_dashForce, ref m_Velocity, m_MovementSmoothing);
+				m_Rigidbody2D.velocity = Vector2.right * 22;
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 			}
 			else
 			{
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;
-				m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, Vector2.left * m_dashForce, ref m_Velocity, m_MovementSmoothing);
+				m_Rigidbody2D.velocity = Vector2.left * 22;
 				m_Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
 			}
 			StartCoroutine(WaitforDashEnd());

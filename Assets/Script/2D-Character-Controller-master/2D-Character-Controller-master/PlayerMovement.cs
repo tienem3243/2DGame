@@ -38,11 +38,7 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
             animator.SetBool("IsJumping", true);
         }
-        if (Input.GetButtonDown("Dash"))
-        {
-            dash = true;
-            animator.SetTrigger("IsDashing");
-        }
+        else
         if (Input.GetButtonDown("Crouch"))
         {
             crouch = true;
@@ -52,10 +48,15 @@ public class PlayerMovement : MonoBehaviour
         {
             crouch = false;
             Debug.Log(crouch);
-        }
+        }else
         if (Input.GetButtonDown("MeleeAtack"))
         {
             atk = true;
+        }else
+             if (Input.GetButtonDown("Dash"))
+        {
+            dash = true;
+            animator.SetTrigger("IsDashing");
         }
 
     }
