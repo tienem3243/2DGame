@@ -63,13 +63,15 @@ public class UnitData : MonoBehaviour
     }
     public IEnumerator SetupAndMove()
     {
-
+        SceneManager.LoadScene(GameData.PlayerData.SceneName);
+        
+        yield return new WaitForSeconds(0.2f);
         player.sethitPoint(GameData.PlayerData.pHp);
         player.setMaxhitPoint(GameData.PlayerData.pMaxHP);
         player.setAtk(GameData.PlayerData.pAtk);
         player.setDef(GameData.PlayerData.pDef);
-        yield return new WaitForSeconds(0.2f);
-        SceneManager.LoadScene(GameData.PlayerData.SceneName);
+        player.gui.SetHealthBar(GameData.PlayerData.pHp, GameData.PlayerData.pMaxHP);
+        
         gameObject.GetComponentInParent<Rigidbody2D>().MovePosition(GameData.PlayerData.saveLocate);
        
        
