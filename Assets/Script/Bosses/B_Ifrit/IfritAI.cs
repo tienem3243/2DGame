@@ -59,10 +59,11 @@ public class IfritAI : MonoBehaviour
             DetectTarget();
             if (controller.rageMode && controller.rageSkillCount > 0 && controller.m_anim.GetCurrentAnimatorStateInfo(0).IsName("Ifrit_Idle")) 
             {
+               
                 
                 StartCoroutine(controller.RageATK(target));
                 
-            }else
+            }
             if (target != null&& !controller.m_anim.GetCurrentAnimatorStateInfo(0).IsName("Ifrit_Cleaver"))
             {
                 //flip controller
