@@ -63,5 +63,8 @@ public class Player : LivingEntity
     public override void EntityDestroy()
     {
         Debug.Log("gameOVer");
+        gameObject.GetComponentInChildren<UnitData>().Load();
+        this.gui.SetHealthBar(base._hitPoint, base._maxHitPoint);
+
     }
 }

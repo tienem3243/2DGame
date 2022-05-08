@@ -200,7 +200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &160552577
 Transform:
   m_ObjectHideFlags: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
   _size: 7
   defaultSize: 3.5
   _sceneY: 0.8
-  defaultSceneY: 0.65
+  defaultSceneY: 10
   _isStart: 0
 --- !u!1 &227731753
 GameObject:
@@ -831,7 +831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &566568683
 Transform:
   m_ObjectHideFlags: 0
