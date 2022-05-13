@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     bool dash = false;
     bool crouch = false;
     bool atk = false;
-
+    bool cooldown;
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawCube(StartPos, new Vector2(1, 1));
@@ -53,14 +53,20 @@ public class PlayerMovement : MonoBehaviour
         {
             atk = true;
         }else
-             if (Input.GetButtonDown("Dash"))
+             if (Input.GetButtonDown("Dash")&&!cooldown)
         {
+            Invoke("Cooldown",1f);
+            cooldown = true;
             dash = true;
             animator.SetTrigger("IsDashing");
         }
 
     }
 
+    public void Cooldown()
+    {
+        cooldown = false;
+    }
     public void OnLanding()
     {
         animator.SetBool("IsJumping", false);
