@@ -31,6 +31,8 @@ public class IfritController : Boss
     public string[] MeleeSkill= { "cleaver" };
     public bool rageMode;
     public bool onRageAtk;
+
+    [SerializeField] private GameObject floatingTextDame;
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(Melee.position,radius);
@@ -180,6 +182,12 @@ public class IfritController : Boss
     }
     public override void takeDamage(float damage)
     {
+      GameObject floatText=  Instantiate(floatingTextDame,new Vector3(transform.position.x, transform.position.y+2),Quaternion.identity);
+        floatText.GetComponentInChildren<TextMesh>().text = damage.ToString();
+        if (_hitPoint < 0)
+        {
+            m_anim.SetTrigger("IsDeath");
+        }
         if(!rageMode)
         Stun();
         _heathBar.setCanvasGroupAlpha(1);

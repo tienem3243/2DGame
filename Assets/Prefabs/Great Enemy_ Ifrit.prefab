@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253412884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.006, y: -0.285, z: 0}
+  m_LocalPosition: {x: -0.067, y: 0.36, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 5598011723024796069}
@@ -125,7 +125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523080520}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.352, y: -0.488, z: 13.064924}
+  m_LocalPosition: {x: -0.588, y: -0.541, z: 13.064924}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 5598011724460898712}
@@ -326,7 +326,7 @@ MonoBehaviour:
   _characterName: Ifrit
   _maxHitPoint: 800
   _hitPoint: 800
-  _dame: 20
+  _dame: 30
   _deathEffect: {fileID: 6923962339590636289, guid: 4b15973d723c89032b2019bfe74cadee, type: 3}
   _deathSound: {fileID: 8300000, guid: 44d28b4883cdfae4e9c6de317c2250ec, type: 3}
   _heathBar: {fileID: 458135095966298544, guid: 2d2ee5fcc6384c145a7ef69988e61f61, type: 3}
@@ -338,7 +338,7 @@ MonoBehaviour:
   fireOrb: {fileID: 7754108118120026980, guid: 2285613da5ac65b41a362563d41177a5, type: 3}
   CircleRolex: {fileID: 253412885}
   Melee: {fileID: 523080521}
-  radius: 1.24
+  radius: 2.37
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 256

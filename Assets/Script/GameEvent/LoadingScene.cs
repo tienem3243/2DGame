@@ -33,7 +33,5 @@ public class LoadingScene : MonoBehaviour
 
         // Dùng JsonDotNet convert dữ liệu từ string sang object
         GameData.PlayerData = JsonUtility.FromJson<UnitData.PlayerData>(s);
-    
-        
     }
 }
