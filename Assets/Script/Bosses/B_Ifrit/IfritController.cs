@@ -146,9 +146,9 @@ public class IfritController : Boss
     }
     public IEnumerator Teleport(Vector3 position)
     {
-        m_anim.SetBool("isDisapear", true);
+        m_anim.SetTrigger("isDisapear");
         yield return new WaitForSeconds(1.2f);
-        m_anim.SetBool("isDisapear", false);
+       
         m_rig.gravityScale = 0;
         m_rig.MovePosition(position);
     }
