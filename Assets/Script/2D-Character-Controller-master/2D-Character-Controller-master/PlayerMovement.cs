@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     bool crouch = false;
     bool atk = false;
     bool cooldown;
+    bool isStun;
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawCube(StartPos, new Vector2(1, 1));
@@ -26,10 +27,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (!isStun)
+        {
+             
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        }
+      
 
 
 
@@ -80,11 +83,41 @@ public class PlayerMovement : MonoBehaviour
     public void OnCrouching(bool isCrouching)
     {
     }
-
+    public void TakeDame(Vector3 sourcePos)//take dame and repel
+    {
+        animator.SetTrigger("getDamaged");
+        isStun = true;
+        StartCoroutine(EffectCoolDown("stun", 0.75f));
+        controller.Repel(3000f, sourcePos);// repel a distance base on position of enemy
+    }
+    public void TakeDame()
+    {
+        animator.SetTrigger("getDamaged");
+    }
+    public IEnumerator EffectCoolDown(string status,float duration) //efeect need a class, not hava
+    {
+        yield return new WaitForSeconds(duration);
+        switch (status)
+        {
+            case "stun":
+                isStun = false;
+                break;
+        }
+        
+    }
     void FixedUpdate()
     {
+        if (!isStun)
+        {
 
-        controller.Move(horizontalMove * Time.fixedDeltaTime, jump, dash, crouch, atk);
+            controller.Move(horizontalMove * Time.fixedDeltaTime, jump, dash, crouch, atk);
+            animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        }
+        else
+        {
+            controller.Move(0, false, false, false, false);
+        }
+        
         dash = false;
         jump = false;
     }

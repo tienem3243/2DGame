@@ -85,7 +85,7 @@ public class IfritController : Boss
             {
                 Debug.Log("atack " + col.name + " " + _dame);
            
-                    col.GetComponent<Player>().takeDamage(_dame);  
+                    col.GetComponent<Player>().takeDamage(_dame,transform.position);  
             }
         }
     }
@@ -174,6 +174,26 @@ public class IfritController : Boss
     
     }
 
+    public void Stun()
+    {
+        m_anim.SetTrigger("takeDame");
+    }
+    public override void takeDamage(float damage)
+    {
+        if(!rageMode)
+        Stun();
+        _heathBar.setCanvasGroupAlpha(1);
+        _hitPoint = Mathf.Clamp(_hitPoint, 0, _maxHitPoint);
+        Mathf.Clamp(base._hitPoint, 0, base._maxHitPoint);
+        base._hitPoint -= damage;
+        _heathBar.SetHealthBar(base._hitPoint, base._maxHitPoint);
 
-
+        if (base._hitPoint <= 0)
+        {
+            // Do something for player die
+            // DropRandomItem._instance.dropRandomItem();
+            dropRandomItem.dropRandomItem();
+            EntityDestroy();
+        }
+    }
 }

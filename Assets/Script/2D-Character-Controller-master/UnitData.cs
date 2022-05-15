@@ -35,7 +35,7 @@ public class UnitData : MonoBehaviour
         PlayerData playerData = new PlayerData(player.getMaxhitpoint(),player.gethitpoint(),player.getAtk(),player.getDef(),player.transform.position);
         // Convert dữ liệu sang dạng string
         string s = JsonUtility.ToJson(playerData);
-        Debug.Log(s);
+        
         // Dùng PlayerPrefs lưu dữ liệu lại
       PlayerPrefs.SetString(KEY_DATA, s);
 
@@ -45,7 +45,7 @@ public class UnitData : MonoBehaviour
     {
         //Lấy dữ liệu dạng string ở PlayerPrefs
         string s = PlayerPrefs.GetString(KEY_DATA);
-        Debug.Log(s);
+
 
         // Nếu chuỗi string null hoặc rỗng thì sẽ tạo một data mới với các giá trị mặc định
         if (string.IsNullOrEmpty(s))

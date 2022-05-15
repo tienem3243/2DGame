@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Player : LivingEntity
 {
     [SerializeField] private float _atk;
     [SerializeField] private float _def;
+    [SerializeField] public PlayerMovement Movement;
     public GUIPlayer gui;
 
     [Header("Inventory")]
@@ -44,8 +46,10 @@ public class Player : LivingEntity
         }
     }
 
-    public override void takeDamage(float damage)
+    public void takeDamage(float damage,Vector3 sourcePos)
     {
+        Movement.TakeDame(sourcePos);
+        Debug.Log(transform.name);
         base._hitPoint -= damage;
         this.gui.SetHealthBar(base._hitPoint, base._maxHitPoint);
 
@@ -55,6 +59,7 @@ public class Player : LivingEntity
             EntityDestroy();
         }
     }
+  
     public float GetAtk()
     {
         return _atk;
@@ -64,8 +69,18 @@ public class Player : LivingEntity
     {
         Debug.Log("gameOVer");
         gameObject.GetComponentInChildren<UnitData>().Load();
+    }
 
-      
+    public override void takeDamage(float damage)
+    {
+        Movement.TakeDame();
+        base._hitPoint -= damage;
+        this.gui.SetHealthBar(base._hitPoint, base._maxHitPoint);
 
+        if (base._hitPoint <= 0)
+        {
+            // Do something for player die
+            EntityDestroy();
+        }
     }
 }

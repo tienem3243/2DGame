@@ -138,50 +138,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3971636356840354537, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4244164841441667702, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -199.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4244164841441667702, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 204.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119128770285165002, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 15.6651
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119128770285165002, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 14.1508
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119128770285165002, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1.6380615
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119128770285165002, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -1.0752869
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119128770285165005, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119128770285165005, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_Color.b
-      value: 0.41509432
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119128770285165005, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_Color.g
-      value: 0.34922755
-      objectReference: {fileID: 0}
-    - target: {fileID: 7119128770285165005, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8798179665164624782, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
       propertyPath: m_Name
       value: RedHood Variant
@@ -229,10 +185,6 @@ PrefabInstance:
     - target: {fileID: 8798179665164624786, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8798179665164624788, guid: c00432c4d14476646a02141dc7cfea21, type: 3}
-      propertyPath: m_MovementSmoothing
-      value: 0.17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c00432c4d14476646a02141dc7cfea21, type: 3}

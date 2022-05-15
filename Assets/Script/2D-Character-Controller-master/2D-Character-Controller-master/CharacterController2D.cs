@@ -86,7 +86,7 @@ public class CharacterController2D : MonoBehaviour
 
 	public void Move(float move, bool jump, bool dash, bool crouch, bool atk)
 	{
-
+		
 		//only control the player if grounded or airControl is turned on
 		if (m_Grounded || m_AirControl)
 		{
@@ -192,7 +192,12 @@ public class CharacterController2D : MonoBehaviour
 		_colDash.enabled = false;
 		_colStand.enabled = true;
 	}
-
+	public void Repel(float repelForce,Vector3 sourcePos)
+    {
+	
+		Vector3 repelPos = (transform.position - new Vector3(sourcePos.x,sourcePos.y+4f,0)).normalized * repelForce;
+		m_Rigidbody2D.AddForce(repelPos);
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Portal"))
@@ -200,4 +205,5 @@ public class CharacterController2D : MonoBehaviour
 			spawnPos = collision.transform.position;
         }
     }
+
 }
